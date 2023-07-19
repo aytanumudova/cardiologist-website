@@ -29,8 +29,7 @@
   .nav-item {
     border: 1px solid #fff !important;
     border-radius: 30px;
-  font-size: 15px;
-
+    font-size: 15px;
   }
   .nav-item:last-child {
     border: none !important;
@@ -40,12 +39,11 @@
   border: none !important;
   font-size: 30px !important;
 }
-@media (max-width:768px){
+@media (max-width: 768px) {
   .navbar-toggler {
     font-size: 25px !important;
   }
 }
-
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
@@ -53,4 +51,12 @@
   text-decoration: none;
   outline: 0;
   box-shadow: none !important;
+}
+/* Introsection */
+.introsection {
+  height: 85vh;
+  width: 100%;
+  background-image: url("./assets/imgs/introsection/cardiology.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
