@@ -17,6 +17,7 @@
   width: 50px;
   margin-right: 10px;
 }
+
 .language img {
   width: 26px;
 }
@@ -38,6 +39,11 @@
 .navbar-toggler {
   border: none !important;
   font-size: 30px !important;
+}
+@media (max-width:768px){
+  .navbar-toggler {
+    font-size: 25px !important;
+  }
 }
 
 .navbar-toggler-icon {
