@@ -8,7 +8,7 @@ const navbar = () => {
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src={navbarBrand} alt="navbar-brand" />
-            Uzm.dr. Hayal Mirzayev
+            Uzm.dr. Khayal Mirzayev
           </a>
           <button
             class="navbar-toggler"
@@ -25,46 +25,29 @@ const navbar = () => {
             <ul class="navbar-nav ms-auto d-flex align-items-end flex-wrap mb-2 mb-lg-0">
               <li class="nav-item me-md-3 px-2">
                 <a class="nav-link text-white" aria-current="page" href="#">
-                  Ana Sayfa
+                  Hakkımda
                 </a>
               </li>
 
               <li class="nav-item me-md-3 px-2">
                 <a class="nav-link text-white" href="#">
-                  Makaleler
+                  Hastalıklar
                 </a>
               </li>
               <li class="nav-item me-md-3 px-2">
                 <a class="nav-link text-white" href="#">
-                  Hizmetlerimiz
+                  Şikayet ve tanı
                 </a>
               </li>
-              <li class="nav-item dropdown me-md-3 px-2">
-                <a
-                  class="nav-link dropdown-toggle  text-white"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Medya
+
+              <li class="nav-item me-md-3 px-2">
+                <a class="nav-link text-white" aria-current="page" href="#">
+                  İşlemler
                 </a>
-                <ul class="dropdown-menu position-absolute">
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Sizden gelenler
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Basında biz
-                    </a>
-                  </li>
-                </ul>
               </li>
               <li class="nav-item me-md-3 px-2">
                 <a class="nav-link text-white" aria-current="page" href="#">
-                  Hakkında
+                  Basında
                 </a>
               </li>
               <li class="nav-item me-md-3 px-2">
