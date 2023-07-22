@@ -23,7 +23,7 @@ const services = () => {
           600: {
             items: 2,
           },
-          1025: {
+          1000: {
             items: 3,
           },
         }}

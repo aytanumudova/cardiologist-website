@@ -6,6 +6,7 @@ import Navbar from "./components/navbar";
 import Introsection from "./components/introsection";
 import WhatPatientsSay from "./components/whatPatientsSay";
 import Services from "./components/services";
+import Footer from "./components/footer";
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
       <Introsection></Introsection>
       <WhatPatientsSay></WhatPatientsSay>
       <Services></Services>
+      <Footer></Footer>
     </>
   );
 }
