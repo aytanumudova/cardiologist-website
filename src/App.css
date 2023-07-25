@@ -6,7 +6,7 @@
 }
 /* Navbar */
 .navbar {
-  background-color: #00365a;
+  background-color: transparent;
 }
 .navbar-toggler {
   border-color: #fff !important;
@@ -59,6 +59,8 @@
 .introsection {
   height: 85vh;
   width: 100%;
+}
+.header {
   background-image: url("./assets/imgs/introsection/cardiology.jpg");
   background-repeat: no-repeat;
   background-size: cover;

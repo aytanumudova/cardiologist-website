@@ -1,9 +1,10 @@
 import React from "react";
 import navbarBrand from "../assets/imgs/navbar/cardiology.png";
 import flagImg from "../assets/imgs/navbar/icon-turkey.png";
-const navbar = () => {
+
+const header = () => {
   return (
-    <div>
+    <div className="header">
       <nav class="navbar navbar-expand-lg p-3">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -68,8 +69,23 @@ const navbar = () => {
           </div>
         </div>
       </nav>
+      <div className="introsection d-flex flex-column align-items-center justify-content-center">
+        <h1 className="text-white">Khayal Mirzayev kimdir?</h1>
+        <a
+          href="#"
+          className="text-decoration-none text-white border border-white rounded-5 px-4 py-2 mt-3 mb-5"
+        >
+          DAHA FAZLA
+        </a>
+        <a
+          href="#"
+          className="text-decoration-none text-white border border-white rounded-5 px-4 py-2 mt-5"
+        >
+          Hastalarımızın yorumları
+        </a>
+      </div>
     </div>
   );
 };
 
-export default navbar;
+export default header;
