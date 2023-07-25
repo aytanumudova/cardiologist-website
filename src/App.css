@@ -1,6 +1,8 @@
 * {
   font-family: "Fira Sans", sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 /* Navbar */
 .navbar {
@@ -86,7 +88,7 @@
 }
 /* FOOTER */
 .footer {
-  padding: 100px;
+  border-top: 1px solid rgb(209, 209, 209);
 }
 .logo-footer {
   width: 45px;
@@ -102,5 +104,17 @@
 .footer a:hover {
   text-decoration: underline;
   transition: 0.3ms;
-
+}
+.footer .info-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.info-row .icon {
+  color: #00365a;
+}
+.footer .copyrighter-row {
+  margin-top: 90px;
+  margin-bottom: 20px;
 }
