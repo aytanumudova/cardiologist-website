@@ -26,21 +26,20 @@ const header = () => {
             <ul class="navbar-nav ms-auto d-flex align-items-end flex-wrap mb-2 mb-lg-0">
               <li class="nav-item me-md-3 px-2">
                 <a class="nav-link text-white" aria-current="page" href="#">
+                  Ana sayfa
+                </a>
+              </li>
+              <li class="nav-item me-md-3 px-2">
+                <a class="nav-link text-white" aria-current="page" href="#">
                   Hakkımda
                 </a>
               </li>
 
               <li class="nav-item me-md-3 px-2">
                 <a class="nav-link text-white" href="#">
-                  Hastalıklar
-                </a>
-              </li>
-              <li class="nav-item me-md-3 px-2">
-                <a class="nav-link text-white" href="#">
                   Şikayet ve tanı
                 </a>
               </li>
-
               <li class="nav-item me-md-3 px-2">
                 <a class="nav-link text-white" aria-current="page" href="#">
                   İşlemler

@@ -10,6 +10,7 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 const services = () => {
   return (
     <div className="services-section container">
+      <h2 className="text-center">Şikayet ve tanı</h2>
       <OwlCarousel
         className="owl-theme "
         loop
