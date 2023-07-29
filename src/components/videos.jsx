@@ -1,22 +1,19 @@
 import React, { useRef, useState } from "react";
 import img1 from "../assets/imgs/services/kalp-kapak.jpg";
 
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 // import required modules
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 const videos = () => {
   return (
-    <div className="container videos-section py-5 mt-5">
+    <div className="container videos-section py-5 my-5">
       <h2 className="text-center mb-4">Videolar</h2>
       <Swiper
-        loop={true}
         pagination={{
           clickable: true,
         }}

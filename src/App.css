@@ -92,6 +92,9 @@
   height: 15rem;
   object-fit: cover;
 }
+.card-text {
+  text-align: center;
+}
 .card-text a {
   text-decoration: none;
   color: #000;
@@ -100,7 +103,7 @@
 }
 /* videos-section */
 .mySwiper {
-  padding-bottom: 30px !important;
+  padding-bottom: 50px !important;
 }
 .videos-section .card-text {
   font-weight: 600;

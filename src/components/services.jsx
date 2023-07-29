@@ -1,35 +1,45 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
 import img1 from "../assets/imgs/services/aritmi.jpg";
 import img2 from "../assets/imgs/services/kalp-kapak.jpg";
 import img3 from "../assets/imgs/services/koroner-arter.jpg";
 import img4 from "../assets/imgs/services/endokardit.png";
-import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
 
 const services = () => {
   return (
-    <div className="services-section container">
-      <h2 className="text-center">Şikayet ve tanı</h2>
-      <OwlCarousel
-        className="owl-theme "
-        loop
-        margin={10}
-        nav
-        autoplay={true}
-        responsive={{
+    <div className="services-section container mb-5 pb-5">
+      <h2 className="text-center mb-4">Şikayet ve tanı</h2>
+      <Swiper
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Autoplay, Pagination]}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: true,
+        }}
+        breakpoints={{
           0: {
-            items: 1,
+            slidesPerView: 1,
+            spaceBetween: 10,
           },
           600: {
-            items: 2,
+            slidesPerView: 2,
+            spaceBetween: 20,
           },
           1000: {
-            items: 3,
+            slidesPerView: 3,
+            spaceBetween: 30,
           },
         }}
+        className="mySwiper"
       >
-        <div class="item">
+        <SwiperSlide>
           <div class="card">
             <img class="card-img-top" src={img1} alt="Card image cap" />
             <div class="card-body">
@@ -38,8 +48,8 @@ const services = () => {
               </p>
             </div>
           </div>
-        </div>
-        <div class="item">
+        </SwiperSlide>
+        <SwiperSlide>
           <div class="card">
             <img class="card-img-top" src={img2} alt="Card image cap" />
             <div class="card-body">
@@ -48,9 +58,8 @@ const services = () => {
               </p>
             </div>
           </div>
-        </div>
-
-        <div class="item">
+        </SwiperSlide>
+        <SwiperSlide>
           <div class="card">
             <img class="card-img-top" src={img3} alt="Card image cap" />
             <div class="card-body">
@@ -59,8 +68,8 @@ const services = () => {
               </p>
             </div>
           </div>
-        </div>
-        <div class="item">
+        </SwiperSlide>
+        <SwiperSlide>
           <div class="card">
             <img class="card-img-top" src={img4} alt="Card image cap" />
             <div class="card-body">
@@ -69,8 +78,9 @@ const services = () => {
               </p>
             </div>
           </div>
-        </div>
-      </OwlCarousel>
+        </SwiperSlide>
+       
+      </Swiper>
     </div>
   );
 };
