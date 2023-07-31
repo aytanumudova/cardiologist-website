@@ -12,7 +12,7 @@ import img4 from "../assets/imgs/services/endokardit.png";
 
 const services = () => {
   return (
-    <div className="services-section container mb-5 pb-5">
+    <div className="services-section container my-5 py-5">
       <h2 className="text-center mb-4">Şikayet ve tanı</h2>
       <Swiper
         pagination={{

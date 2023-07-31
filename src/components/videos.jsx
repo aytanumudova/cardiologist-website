@@ -14,7 +14,7 @@ const videos = () => {
     <div className="container videos-section py-5 my-5">
       <h2 className="text-center mb-4">Videolar</h2>
       <Swiper
-        pagination={{
+              pagination={{
           clickable: true,
         }}
         modules={[Autoplay, Pagination]}
@@ -88,6 +88,7 @@ const videos = () => {
             </div>
           </div>
         </SwiperSlide>
+     
       </Swiper>
     </div>
   );

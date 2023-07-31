@@ -6,14 +6,14 @@ import Header from "./components/header";
 import Videos from "./components/videos";
 import Services from "./components/services";
 import Footer from "./components/footer";
-// import WhatClientsSay from "./components/whatClientsSay";
+import WhatClientsSay from "./components/whatClientsSay";
 function App() {
   return (
     <>
       <Header></Header>
-      <Videos></Videos>
-      {/* <WhatClientsSay></WhatClientsSay> */}
       <Services></Services>
+      <WhatClientsSay></WhatClientsSay>
+      <Videos></Videos>
       <Footer></Footer>
     </>
   );
