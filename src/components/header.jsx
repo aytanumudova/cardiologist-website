@@ -7,7 +7,7 @@ const header = () => {
     <div className="header">
       <nav class="navbar navbar-expand-lg p-3">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="">
             <img src={navbarBrand} alt="navbar-brand" />
             Uzm.dr. Khayal Mirzayev
           </a>

@@ -79,6 +79,14 @@
   object-fit: cover;
 }
 
+.mySwiper {
+  padding-bottom: 50px !important;
+}
+.videos-section .card-text {
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
 /* Services-section */
 .services-section .card {
   border-top-left-radius: 20px;
@@ -100,15 +108,7 @@
   font-size: 18px;
   font-weight: 600;
 }
-/* videos-section */
-.mySwiper {
-  padding-bottom: 50px !important;
-}
-.videos-section .card-text {
-  font-weight: 600;
-  text-transform: uppercase;
-  text-align: center;
-}
+
 /* FOOTER */
 .footer {
   border-top: 1px solid rgb(209, 209, 209);
@@ -145,4 +145,32 @@
 .text-bold {
   font-weight: 800 !important;
 }
+/* aboutme-section */
+.aboutme-section .navbar {
+  background: linear-gradient(
+    270deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(2, 53, 82, 1) 0%,
+    rgba(2, 90, 130, 1) 100%
+  );
+}
+.doctorImg-container {
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  border-radius: 30px;
+}
+.doctorImg-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  
+}
 
+.color-blue {
+  color: #00365a;
+}
+.font-weight-bold {
+  font-weight: 500;
+}

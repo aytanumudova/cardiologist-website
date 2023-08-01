@@ -7,14 +7,16 @@ import Videos from "./components/videos";
 import Services from "./components/services";
 import Footer from "./components/footer";
 import WhatClientsSay from "./components/whatClientsSay";
+import AboutMe from "./components/pages/aboutMe";
 function App() {
   return (
     <>
-      <Header></Header>
+      {/* <Header></Header>
       <Services></Services>
       <WhatClientsSay></WhatClientsSay>
       <Videos></Videos>
-      <Footer></Footer>
+      <Footer></Footer> */}
+      <AboutMe></AboutMe>
     </>
   );
 }
