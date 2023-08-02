@@ -165,12 +165,18 @@
   height: 100%;
   object-fit: cover;
   border-radius: 30px;
-  
 }
-
 .color-blue {
   color: #00365a;
 }
 .font-weight-bold {
   font-weight: 500;
+}
+.info-rows-container span {
+  background-color: #00365a;
+  color: #fff;
+  border-radius: 6px;
+  padding: 2px 5px;
+  font-size: 12px;
+  margin-right: 10px;
 }
