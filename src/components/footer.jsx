@@ -18,12 +18,13 @@ const footer = () => {
           </a>
           <p className="mt-3">
             Prof. Dr. Khayal Mirzayev'e Sorularınızı
-            <span className="bold-text">bilgi@khayalmirza.com</span>'dan e-posta
-            yoluyla bildirebilirsiniz.
+            <span className="bold-text"> bilgi@khayalmirza.com</span>'dan
+            e-posta yoluyla bildirebilirsiniz.
           </p>
           <p>
-            Randevu taleplerinizi 0312 418 14 34 numarasından telefon yoluyla
-            bildirebilirsiniz.
+            Randevu taleplerinizi{" "}
+            <span className="bold-text">0312 418 14 34</span> numarasından
+            telefon yoluyla bildirebilirsiniz.
           </p>
         </div>
         <div className="col-12 col-lg-4 d-flex flex-column mb-5 mb-lg-0 ps-lg-5">

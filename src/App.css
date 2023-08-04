@@ -181,7 +181,7 @@
   border-radius: 30px;
 }
 .color-blue {
-  color: #00365a;
+  color: #00548b;
 }
 .font-weight-bold {
   font-weight: 500;
@@ -213,4 +213,45 @@
   object-fit: cover;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+}
+/* aboutDisease-section */
+.aboutDisease-section {
+  background-color: #f5f6fa;
+  padding: 100px 0;
+}
+
+.nav-text {
+  font-size: 13px !important;
+}
+.aboutDisease-section .article-image {
+  border-radius: 30px;
+  width: 90%;
+  height: 430px;
+  object-fit: cover;
+}
+.aboutDisease-section .article-text {
+  line-height: 35px;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+@media (max-width: 768px) {
+  .aboutDisease-section .article-text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.aboutDisease-section .article-text p {
+  margin-bottom: 35px;
+}
+.aboutDisease-section span {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.aboutDisease-section .card {
+  background-color: transparent;
+}
+.aboutDisease-section .cards-container .card-img-top {
+  height: 200px;
+  object-fit: cover;
 }

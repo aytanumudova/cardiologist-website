@@ -196,11 +196,11 @@ const aboutMe = () => {
             </a>
             <p className="mt-3">
               Prof. Dr. Khayal Mirzayev'e Sorularınızı
-              <span className="bold-text">bilgi@khayalmirza.com</span>'dan
+              <span className="bold-text"> bilgi@khayalmirza.com</span>'dan
               e-posta yoluyla bildirebilirsiniz.
             </p>
             <p>
-              Randevu taleplerinizi 0312 418 14 34 numarasından telefon yoluyla
+              Randevu taleplerinizi <span className="bold-text">0312 418 14 34</span> numarasından telefon yoluyla
               bildirebilirsiniz.
             </p>
           </div>
