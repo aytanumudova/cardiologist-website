@@ -8,6 +8,7 @@ import Services from "./components/services";
 import Footer from "./components/footer";
 import WhatClientsSay from "./components/whatClientsSay";
 import AboutMe from "./components/pages/aboutMe";
+import DiseasesSection from "./components/pages/diseasesSection";
 function App() {
   return (
     <>
@@ -15,8 +16,9 @@ function App() {
       <Services></Services>
       <WhatClientsSay></WhatClientsSay>
       <Videos></Videos>
-      <Footer></Footer> */}
-      <AboutMe></AboutMe>
+      <Footer></Footer>   
+      <AboutMe></AboutMe> */}
+      <DiseasesSection></DiseasesSection>
     </>
   );
 }

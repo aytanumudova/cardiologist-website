@@ -5,10 +5,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
-import img1 from "../assets/imgs/services/aritmi.jpg";
-import img2 from "../assets/imgs/services/kalp-kapak.jpg";
-import img3 from "../assets/imgs/services/koroner-arter.jpg";
-import img4 from "../assets/imgs/services/endokardit.png";
+import img1 from "../assets/imgs/services/image1.jpg";
+import img2 from "../assets/imgs/services/ritim-bozukluk.jpeg";
+import img3 from "../assets/imgs/services/kalp_yetersizligi.jpg";
+import img4 from "../assets/imgs/services/carpinti.jpg";
 
 const services = () => {
   return (
@@ -41,45 +41,59 @@ const services = () => {
       >
         <SwiperSlide>
           <div class="card">
-            <img class="card-img-top" src={img1} alt="Card image cap" />
+            <a className="card-head" href="#">
+              <img class="card-img-top" src={img1} alt="Card image cap" />
+            </a>
             <div class="card-body">
               <p class="card-text">
-                <a href="#">Kalp ritmi sorunları (aritmiler)</a>
+                <a href="#">Kalp Sağlığı Nasıl Korunur?</a>
               </p>
+              <small className="text-secondary">12 HAZ, 2023</small>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div class="card">
-            <img class="card-img-top" src={img2} alt="Card image cap" />
+            <a className="card-head" href="#">
+              <img class="card-img-top" src={img2} alt="Card image cap" />
+            </a>
             <div class="card-body">
               <p class="card-text">
-                <a href="#">Kalp kapak hastalığı</a>
+                <a href="#">
+                  Aritmi (Kalp Ritim Bozukluğu) Neden Olur, Belirtileri
+                  Nelerdir?
+                </a>
               </p>
+              <small className="text-secondary">12 HAZ, 2023</small>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div class="card">
-            <img class="card-img-top" src={img3} alt="Card image cap" />
+            <a className="card-head" href="#">
+              <img class="card-img-top" src={img3} alt="Card image cap" />
+            </a>
             <div class="card-body">
               <p class="card-text">
-                <a href="#">Koroner arter hastalığı</a>
+                <a href="#">Kalp Yetersizliği</a>
               </p>
+              <small className="text-secondary">12 HAZ, 2023</small>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div class="card">
-            <img class="card-img-top" src={img4} alt="Card image cap" />
+            <a className="card-head" href="#">
+              <img class="card-img-top" src={img4} alt="Card image cap" />
+            </a>
             <div class="card-body">
               <p class="card-text">
-                <a href="#">Kalp enfeksiyonu</a>
+                <a href="#">Kalp Çarpıntısı</a>
               </p>
+              <small className="text-secondary">12 HAZ, 2023</small>
             </div>
           </div>
         </SwiperSlide>
-       
       </Swiper>
     </div>
   );

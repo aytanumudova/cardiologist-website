@@ -66,6 +66,16 @@
   height: 86vh;
   width: 100%;
 }
+/* whatClientsSay */
+.whatClientsSay {
+  background-color: #f5f6fa;
+  padding: 70px 40px 100px;
+}
+.whatClientsSay .mySwiper {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 60px;
+}
 /* Videos-section */
 .videos-section .card {
   border-top-left-radius: 20px;
@@ -89,8 +99,10 @@
 }
 /* Services-section */
 .services-section .card {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-radius: 20px;
+  height: 370px;
+  background-color: #f5f6fa;
+  border: none;
 }
 .services-section .card-img-top {
   border-top-left-radius: 20px;
@@ -99,9 +111,7 @@
   height: 15rem;
   object-fit: cover;
 }
-.card-text {
-  text-align: center;
-}
+
 .card-text a {
   text-decoration: none;
   color: #000;
@@ -111,7 +121,7 @@
 
 /* FOOTER */
 .footer {
-  border-top: 1px solid rgb(209, 209, 209);
+  border-top: 1px solid #e4e4e4;
 }
 .logo-footer {
   width: 45px;
@@ -146,13 +156,17 @@
   font-weight: 800 !important;
 }
 /* aboutme-section */
-.aboutme-section .navbar {
+.myNavbar {
   background: linear-gradient(
     270deg,
     rgba(2, 0, 36, 1) 0%,
     rgba(2, 53, 82, 1) 0%,
     rgba(2, 90, 130, 1) 100%
   );
+}
+.aboutme-section {
+  background-color: #f5f6fa;
+  padding: 100px 0;
 }
 .doctorImg-container {
   width: 600px;
@@ -175,8 +189,28 @@
 .info-rows-container span {
   background-color: #00365a;
   color: #fff;
-  border-radius: 6px;
+  border-radius: 45%;
   padding: 2px 5px;
   font-size: 12px;
   margin-right: 10px;
+}
+
+/* diseases-section */
+.diseases-section {
+  background-color: #f5f6fa;
+  padding: 100px 0;
+}
+.diseases-section .card {
+  border: none;
+  border-radius: 30px;
+}
+.diseases-section .card-head {
+  height: 300px;
+}
+.diseases-section .card-head img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }

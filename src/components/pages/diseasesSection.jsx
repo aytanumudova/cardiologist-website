@@ -1,7 +1,11 @@
 import React from "react";
-import doctorImg from "../../assets/imgs/aboutMe/cardiologist.jpeg";
 import navbarBrand from "../../assets/imgs/navbar/cardiology.png";
 import flagImg from "../../assets/imgs/navbar/icon-turkey.png";
+
+import img1 from "../../assets/imgs/services/image1.jpg";
+import img2 from "../../assets/imgs/services/ritim-bozukluk.jpeg";
+import img3 from "../../assets/imgs/services/kalp_yetersizligi.jpg";
+import img4 from "../../assets/imgs/services/carpinti.jpg";
 
 import logo from "../../assets/imgs/navbar/cardiology.png";
 import ReactDOM from "react-dom";
@@ -11,7 +15,7 @@ import { faMap } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
-const aboutMe = () => {
+const diseasesSection = () => {
   return (
     <div>
       <nav class="navbar navbar-expand-lg p-3 myNavbar">
@@ -77,111 +81,62 @@ const aboutMe = () => {
           </div>
         </div>
       </nav>
-      <div className="aboutme-section">
+      <div className="diseases-section">
         <div className="container">
-          <h1 className="mb-4 text-center">Kardiyolog Dr. Khayal Mirzayev</h1>
-          <small className="text-center d-block">
-            GENEL VE AKADEMİK BİLGİLER
-          </small>
+          <h1 className="mb-4 text-center">Şikayet ve Tanı</h1>
           <div className="my-3 font-weight-bold my-4 text-center">
             <a href="#" className="text-decoration-none text-dark">
               Ana Sayfa
             </a>
             <span className="mx-3">{">>"}</span>
-            <a className="color-blue text-decoration-none">Hakkımda</a>
+            <a className="color-blue text-decoration-none">Şikayet ve Tanı</a>
           </div>
-          <div className="doctorImg-container col-12 col-md-9  px-4 px-md-0">
-            <img src={doctorImg} alt="doctor-image" />
-          </div>
-          <div className="mt-5 pt-3 info-rows-container row px-4">
-            <div className="col-12 col-md-6">
-              <div className="d-flex align-items-start">
-                <span>{">>"}</span>
-                <p>
-                  17 NİSAN 1966‘da YOZGAT’ın BOĞAZLAYAN ilçesinde doğdu.
-                  İlköğrenimini sırasıyla; AYDIN-SULTANHİSAR, HAKKARİ-ŞEMDİNLİ,
-                  KONYA-YUNAK ve SEYDİŞEHİR’de tamamladı.
+          <div className="px-3 px-md-0 d-flex flex-column justify-content-center align-items-center">
+            <div class="card mb-5 col-12 col-md-8">
+              <a className="card-head" href="#">
+                <img class="card-img-top" src={img1} alt="Card image cap" />
+              </a>
+              <div class="card-body">
+                <p class="card-text">
+                  <a href="#">Kalp Sağlığı Nasıl Korunur?</a>
                 </p>
-              </div>
-              <div className="d-flex align-items-start">
-                <span>{">>"}</span>
-                <p>1984 YILINDA ASKERİ KULELİ LİSESİ’NDEN mezun oldu.</p>
-              </div>
-              <div className="d-flex align-items-start">
-                <span>{">>"}</span>
-                <p>
-                  1990 YILINDA GÜLHANE ASKERİ TIP FAKÜLTESİ’nden Hv.Tbp.Tğm.
-                  rütbesiyle mezun oldu. Gata Komutanlığında bir yıl stajyer
-                  teğmen olarak görev yaptı.
-                </p>
-              </div>
-              <div className="d-flex align-items-start">
-                <span>{">>"}</span>
-                <p>
-                  1991-1993 yılları arasında Balıkesir 9. Ana jet Üs
-                  Komutanlığında uçuş hekimi olarak çalıştı.
-                </p>
-              </div>
-              <div className="d-flex align-items-start">
-                <span>{">>"}</span>
-                <p>
-                  1993-1997 GATA Kardiyoloji AD’ da uzmanlık öğrencisi olarak
-                  çalıştı.
-                </p>
-              </div>
-              <div className="d-flex align-items-start">
-                <span>{">>"}</span>
-                <p>
-                  1997 yılında TÜRKİYE YÜKSEK İHTİSAS HASTANESİ’nde
-                  ELEKTROFİZYOLOJİ VE ARİTMİ alanında eğitim aldı. Takiben
-                  HOLLANDA MAASTRİCHT VE BELÇİKA AALST şehirlerinde bulunan
-                  akademik hastanelerde gözlemci olarak çalıştı.
-                </p>
+                <small className="text-secondary">12 HAZ, 2023</small>
               </div>
             </div>
-            <div className="col-12 col-md-6">
-              <div className="d-flex align-items-start">
-                <span>{">>"}</span>
-                <p>
-                  17 NİSAN 1966‘da YOZGAT’ın BOĞAZLAYAN ilçesinde doğdu.
-                  İlköğrenimini sırasıyla; AYDIN-SULTANHİSAR, HAKKARİ-ŞEMDİNLİ,
-                  KONYA-YUNAK ve SEYDİŞEHİR’de tamamladı.
+            <div class="card mb-5 col-12 col-md-8">
+              <a className="card-head" href="#">
+                <img class="card-img-top" src={img2} alt="Card image cap" />
+              </a>
+              <div class="card-body">
+                <p class="card-text">
+                  <a href="#">
+                    Aritmi (Kalp Ritim Bozukluğu) Neden Olur, Belirtileri
+                    Nelerdir?
+                  </a>
                 </p>
+                <small className="text-secondary">12 HAZ, 2023</small>
               </div>
-              <div className="d-flex align-items-start">
-                <span>{">>"}</span>
-                <p>1984 YILINDA ASKERİ KULELİ LİSESİ’NDEN mezun oldu.</p>
-              </div>
-              <div className="d-flex align-items-start">
-                <span>{">>"}</span>
-                <p>
-                  1990 YILINDA GÜLHANE ASKERİ TIP FAKÜLTESİ’nden Hv.Tbp.Tğm.
-                  rütbesiyle mezun oldu. Gata Komutanlığında bir yıl stajyer
-                  teğmen olarak görev yaptı.
+            </div>
+            <div class="card mb-5 col-12 col-md-8">
+              <a className="card-head" href="#">
+                <img class="card-img-top" src={img3} alt="Card image cap" />
+              </a>{" "}
+              <div class="card-body">
+                <p class="card-text">
+                  <a href="#">Kalp Yetersizliği</a>
                 </p>
+                <small className="text-secondary">12 HAZ, 2023</small>
               </div>
-              <div className="d-flex align-items-start">
-                <span>{">>"}</span>
-                <p>
-                  1991-1993 yılları arasında Balıkesir 9. Ana jet Üs
-                  Komutanlığında uçuş hekimi olarak çalıştı.
+            </div>
+            <div class="card col-12 col-md-8">
+              <a className="card-head" href="#">
+                <img class="card-img-top" src={img4} alt="Card image cap" />
+              </a>
+              <div class="card-body">
+                <p class="card-text">
+                  <a href="#">Kalp Çarpıntısı</a>
                 </p>
-              </div>
-              <div className="d-flex align-items-start">
-                <span>{">>"}</span>
-                <p>
-                  1993-1997 GATA Kardiyoloji AD’ da uzmanlık öğrencisi olarak
-                  çalıştı.
-                </p>
-              </div>
-              <div className="d-flex align-items-start">
-                <span>{">>"}</span>
-                <p>
-                  1997 yılında TÜRKİYE YÜKSEK İHTİSAS HASTANESİ’nde
-                  ELEKTROFİZYOLOJİ VE ARİTMİ alanında eğitim aldı. Takiben
-                  HOLLANDA MAASTRİCHT VE BELÇİKA AALST şehirlerinde bulunan
-                  akademik hastanelerde gözlemci olarak çalıştı.
-                </p>
+                <small className="text-secondary">12 HAZ, 2023</small>
               </div>
             </div>
           </div>
@@ -245,4 +200,4 @@ const aboutMe = () => {
   );
 };
 
-export default aboutMe;
+export default diseasesSection;
