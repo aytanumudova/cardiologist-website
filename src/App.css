@@ -134,17 +134,21 @@
   text-decoration: none;
   color: #000;
 }
+.info-row a {
+  text-decoration: none;
+  color: #000;
+}
 .footer a:hover {
   text-decoration: underline;
   transition: 0.3ms;
 }
-.footer .info-row {
+.info-row {
   display: flex;
   align-items: center;
   gap: 15px;
   margin-bottom: 10px;
 }
-.info-row .icon {
+.icon {
   color: #00365a;
 }
 .footer .copyrighter-row {
@@ -254,4 +258,32 @@
 .aboutDisease-section .cards-container .card-img-top {
   height: 200px;
   object-fit: cover;
+}
+/* contact-section */
+.contact-section {
+  padding: 100px 0;
+  background-color: #f5f6fa;
+}
+.contact-section .myIframe {
+  border-radius: 20px;
+  box-shadow: 4px 34px 60px -30px rgba(0, 0, 0, 0.28);
+  -webkit-box-shadow: 4px 34px 60px -30px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 4px 34px 60px -30px rgba(0, 0, 0, 0.28);
+}
+.bg-blue {
+  background-color: #00365a;
+}
+
+.contact-section .myForm input:not([type=checkbox]),
+textarea {
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #e4e4e4;
+  background-color: #efeff2;
+  padding: 7px 15px;
+  font-size: 15px;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #a0a0a0;
 }

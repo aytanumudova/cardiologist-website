@@ -10,6 +10,7 @@ import WhatClientsSay from "./components/whatClientsSay";
 import AboutMe from "./components/pages/aboutMe";
 import DiseasesSection from "./components/pages/diseasesSection";
 import AboutDisease from "./components/pages/aboutDisease";
+import Contact from "./components/pages/contact";
 function App() {
   return (
     <>
@@ -19,8 +20,9 @@ function App() {
       <Videos></Videos>
       <Footer></Footer>   
       <AboutMe></AboutMe> 
-      <DiseasesSection></DiseasesSection>*/}
-      <AboutDisease></AboutDisease>
+      <DiseasesSection></DiseasesSection>
+      <AboutDisease></AboutDisease>*/}
+      <Contact></Contact>
     </>
   );
 }
