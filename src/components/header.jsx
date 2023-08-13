@@ -1,16 +1,17 @@
 import React from "react";
 import navbarBrand from "../assets/imgs/navbar/cardiology.png";
 import flagImg from "../assets/imgs/navbar/icon-turkey.png";
+import { Link } from "react-router-dom";
 
 const header = () => {
   return (
     <div className="header">
       <nav class="navbar navbar-expand-lg p-3">
         <div class="container-fluid">
-          <a class="navbar-brand" href="">
+          <Link class="navbar-brand" to={"/"}>
             <img src={navbarBrand} alt="navbar-brand" />
             Uzm.dr. Khayal Mirzayev
-          </a>
+          </Link>
           <button
             class="navbar-toggler"
             type="button"
@@ -25,35 +26,39 @@ const header = () => {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto d-flex align-items-end flex-wrap mb-2 mb-lg-0">
               <li class="nav-item me-md-3 px-2">
-                <a class="nav-link text-white" aria-current="page" href="#">
+                <Link class="nav-link text-white" aria-current="page" to={"/"}>
                   Ana sayfa
-                </a>
+                </Link>
               </li>
               <li class="nav-item me-md-3 px-2">
-                <a class="nav-link text-white" aria-current="page" href="#">
+                <Link
+                  class="nav-link text-white"
+                  aria-current="page"
+                  to={"/aboutMe"}
+                >
                   Hakkımda
-                </a>
+                </Link>
               </li>
 
               <li class="nav-item me-md-3 px-2">
-                <a class="nav-link text-white" href="#">
+                <Link class="nav-link text-white" to={"/diseasesPage"}>
                   Şikayet ve tanı
-                </a>
+                </Link>
               </li>
               <li class="nav-item me-md-3 px-2">
-                <a class="nav-link text-white" aria-current="page" href="#">
+                <Link class="nav-link text-white" aria-current="page" to={"/servicesPage"}>
                   İşlemler
-                </a>
+                </Link>
               </li>
               <li class="nav-item me-md-3 px-2">
-                <a class="nav-link text-white" aria-current="page" href="#">
+                <Link class="nav-link text-white" aria-current="page" to={"/"}>
                   Basında
-                </a>
+                </Link>
               </li>
               <li class="nav-item me-md-3 px-2">
-                <a class="nav-link text-white" aria-current="page" href="#">
+                <Link class="nav-link text-white" aria-current="page" to={"/contact"}>
                   İletişim
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
                 <a
@@ -68,21 +73,7 @@ const header = () => {
           </div>
         </div>
       </nav>
-      <div className="introsection d-flex flex-column align-items-center justify-content-center">
-        <h1 className="text-white">Khayal Mirzayev kimdir?</h1>
-        <a
-          href="#"
-          className="text-decoration-none text-white border border-white rounded-5 px-4 py-2 mt-3 mb-5"
-        >
-          DAHA FAZLA
-        </a>
-        <a
-          href="#"
-          className="text-decoration-none text-white border border-white rounded-5 px-4 py-2 mt-5"
-        >
-          Hastalarımızın yorumları
-        </a>
-      </div>
+      
     </div>
   );
 };

@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@cloudinary/react": "^1.11.2",
+    "@cloudinary/url-gen": "^1.11.1",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
@@ -19,6 +21,7 @@
     "react-owl-carousel": "^2.3.3",
     "react-responsive-carousel": "^3.2.23",
     "react-scripts": "5.0.1",
+    "styled-components": "^6.0.7",
     "swiper": "^10.0.4",
     "web-vitals": "^2.1.4"
   },
@@ -45,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-router-dom": "^6.14.2"
   }
 }

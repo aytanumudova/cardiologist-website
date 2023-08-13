@@ -1,6 +1,8 @@
 import React from "react";
 import logo from "../assets/imgs/navbar/cardiology.png";
 import ReactDOM from "react-dom";
+import { Link } from "react-router-dom";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faMap } from "@fortawesome/free-solid-svg-icons";
@@ -12,26 +14,26 @@ const footer = () => {
     <div className="footer pt-5">
       <div className="container row m-auto">
         <div className="col-12 col-lg-4 mb-4 mg-lg-0">
-          <a href="#" className="text-decoration-none">
+          <Link to={"/"} className="text-decoration-none">
             <img src={logo} alt="navbar-brand" className="logo-footer" />
             Uzm.dr. Khayal Mirzayev
-          </a>
+          </Link>
           <p className="mt-3">
             Prof. Dr. Khayal Mirzayev'e Sorularınızı
             <span className="bold-text"> bilgi@khayalmirza.com</span>'dan
             e-posta yoluyla bildirebilirsiniz.
           </p>
           <p>
-            Randevu taleplerinizi{" "}
+            Randevu taleplerinizi
             <span className="bold-text">0312 418 14 34</span> numarasından
             telefon yoluyla bildirebilirsiniz.
           </p>
         </div>
         <div className="col-12 col-lg-4 d-flex flex-column mb-5 mb-lg-0 ps-lg-5">
           <h5>Kurumsal</h5>
-          <a href="#">Hakkımda</a>
-          <a href="#">Basında</a>
-          <a href="#">İletişim</a>
+          <Link to={"/aboutMe"}>Hakkımda</Link>
+          <Link to={"/"}>Basında</Link>
+          <Link to={"/contact"}>İletişim</Link>
         </div>
         <div className="col-12 col-lg-4 d-flex flex-column">
           <h5> İletişim Bilgileri</h5>

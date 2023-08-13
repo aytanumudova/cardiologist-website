@@ -5,14 +5,16 @@
 }
 
 /* Header */
-.header {
-  background-image: url("./assets/imgs/introsection/cardiology.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 /* Navbar */
 .navbar {
-  background-color: transparent;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    270deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(2, 53, 82, 1) 0%,
+    rgba(2, 90, 130, 1) 100%
+  );
 }
 .navbar-toggler {
   border-color: #fff !important;
@@ -62,9 +64,13 @@
   box-shadow: none !important;
 }
 /* Introsection */
+
 .introsection {
   height: 86vh;
   width: 100%;
+  background-image: url("./assets/imgs/introsection/cardiology.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* whatClientsSay */
 .whatClientsSay {
@@ -204,7 +210,7 @@
   background-color: #f5f6fa;
   padding: 100px 0;
 }
-.diseases-section .card {
+.diseases-section .card{
   border: none;
   border-radius: 30px;
 }
@@ -274,7 +280,7 @@
   background-color: #00365a;
 }
 
-.contact-section .myForm input:not([type=checkbox]),
+.contact-section .myForm input:not([type="checkbox"]),
 textarea {
   width: 100%;
   border-radius: 20px;
@@ -286,4 +292,23 @@ textarea {
 input::placeholder,
 textarea::placeholder {
   color: #a0a0a0;
+}
+/* services-page */
+.services-page {
+  padding: 100px 0;
+  background-color: #f5f6fa;
+}
+.services-page .card{
+  border: none;
+  border-radius: 30px;
+}
+.services-page .card-head {
+  height: 300px;
+}
+.services-page .card-head img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
