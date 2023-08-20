@@ -4,8 +4,6 @@
   padding: 0;
 }
 
-/* Header */
-
 /* Navbar */
 .navbar {
   background: rgb(2, 0, 36);
@@ -36,6 +34,10 @@
 .nav-item {
   font-size: 20px;
 }
+.nav-link:hover {
+  color: #002742 !important;
+}
+
 @media (min-width: 992px) {
   .nav-item {
     border: 1px solid #fff !important;
@@ -45,7 +47,13 @@
   .nav-item:last-child {
     border: none !important;
   }
+  .nav-item:not(:last-child):hover {
+    border: 1px solid #002742 !important;
+    border-radius: 30px;
+    transition: 200ms ease-in;
+  }
 }
+
 .navbar-toggler {
   border: none !important;
   font-size: 30px !important;
@@ -63,8 +71,8 @@
   outline: 0;
   box-shadow: none !important;
 }
-/* Introsection */
 
+/* Introsection */
 .introsection {
   height: 86vh;
   width: 100%;
@@ -72,10 +80,23 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.myBtn {
+  color: #fff;
+  border: 1px solid #fff;
+}
+.myBtn:hover {
+  color: #002742 !important;
+  border: 1px solid #002742 !important;
+  transition: 200ms ease-in;
+}
 /* whatClientsSay */
 .whatClientsSay {
   background-color: #f5f6fa;
   padding: 70px 40px 100px;
+}
+.whatClientsSay h2 {
+  font-size: 42px;
 }
 .whatClientsSay .mySwiper {
   background-color: #fff;
@@ -83,6 +104,9 @@
   padding: 60px;
 }
 /* Videos-section */
+.videos-section h2 {
+  font-size: 42px;
+}
 .videos-section .card {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -103,21 +127,29 @@
   text-transform: uppercase;
   text-align: center;
 }
-/* Services-section */
-.services-section .card {
-  border-radius: 20px;
+/* Diseases-section  */
+.diseases-section h2 {
+  font-size: 42px;
+}
+.line {
+  border: 1px solid #00548b;
+  width: 100px;
+  margin: auto;
+  margin-top: 20px;
+}
+.diseases-section .card {
+  border-radius: 20prgb (8, 8, 8);
   height: 370px;
   background-color: #f5f6fa;
   border: none;
 }
-.services-section .card-img-top {
+.diseases-section .card-img-top {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   width: 100%;
   height: 15rem;
   object-fit: cover;
 }
-
 .card-text a {
   text-decoration: none;
   color: #000;
@@ -132,6 +164,12 @@
 .logo-footer {
   width: 45px;
   margin-right: 8px;
+  color: #58b0fe !important;
+  font-weight: 500 !important;
+}
+.logo-footer img {
+  width: 50px;
+  margin-right: 10px;
 }
 .bold-text {
   font-weight: bold;
@@ -191,7 +229,7 @@
   border-radius: 30px;
 }
 .color-blue {
-  color: #00548b;
+  color: #00365a;
 }
 .font-weight-bold {
   font-weight: 500;
@@ -205,25 +243,46 @@
   margin-right: 10px;
 }
 
-/* diseases-section */
-.diseases-section {
+/* diseases-page */
+.diseases-page {
   background-color: #f5f6fa;
   padding: 100px 0;
 }
-.diseases-section .card{
+.diseases-page .card {
   border: none;
   border-radius: 30px;
 }
-.diseases-section .card-head {
+.diseases-page .card-head {
   height: 300px;
 }
-.diseases-section .card-head img {
+.diseases-page .card-head img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
+
+/* atMedia-page */
+.atMedia-page {
+  background-color: #f5f6fa;
+  padding: 100px 0;
+}
+.atMedia-page .card {
+  border: none;
+  border-radius: 30px;
+}
+.atMedia-page .card-head {
+  height: 300px;
+}
+.atMedia-page .card-head img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
 /* aboutDisease-section */
 .aboutDisease-section {
   background-color: #f5f6fa;
@@ -298,7 +357,7 @@ textarea::placeholder {
   padding: 100px 0;
   background-color: #f5f6fa;
 }
-.services-page .card{
+.services-page .card {
   border: none;
   border-radius: 30px;
 }

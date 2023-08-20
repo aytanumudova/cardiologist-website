@@ -51,7 +51,7 @@ const header = () => {
                 </Link>
               </li>
               <li class="nav-item me-md-3 px-2">
-                <Link class="nav-link text-white" aria-current="page" to={"/"}>
+                <Link class="nav-link text-white" aria-current="page" to={"/atMediaPage"}>
                   Basında
                 </Link>
               </li>

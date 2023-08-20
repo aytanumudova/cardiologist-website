@@ -7,6 +7,7 @@ import img2 from "../assets/imgs/services/ritim-bozukluk.jpeg";
 import img3 from "../assets/imgs/services/kalp_yetersizligi.jpg";
 import img4 from "../assets/imgs/services/carpinti.jpg";
 
+import { Link } from "react-router-dom";
 
 const aboutDisease = () => {
   return (
@@ -16,13 +17,13 @@ const aboutDisease = () => {
         <div className="container">
           <h1 className="mb-4 text-center">Kalp Sağlığı Nasıl Korunur?</h1>
           <div className="my-3 my-4 text-center nav-text">
-            <a href="#" className="text-decoration-none text-dark">
+            <Link to={"/"} className="text-decoration-none text-dark">
               Ana Sayfa
-            </a>
+            </Link>
             <span className="mx-3 color-blue">{">>"}</span>
-            <a className="text-decoration-none text-dark" href="#">
+            <Link to={"/diseasesPage"} className="text-decoration-none text-dark" href="#">
               Şikayet ve Tanı
-            </a>
+            </Link>
             <span className="mx-3 color-blue">{">>"}</span>
             <a className="color-blue text-decoration-none">
               Kalp Sağlığı Nasıl Korunur?

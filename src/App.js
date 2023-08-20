@@ -11,6 +11,8 @@ import AboutMe from "./pages/aboutMe";
 import DiseasesPage from "./pages/diseasesPage";
 import AboutDisease from "./pages/aboutDisease";
 import ServicesPage from "./pages/servicesPage";
+import AtMediaPage from "./pages/atMediaPage";
+
 
 function App() {
   return (
@@ -20,8 +22,9 @@ function App() {
         <Route path="/aboutMe" element={<AboutMe />} />
         <Route path="/diseasesPage" element={<DiseasesPage />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/aboutDisease/:slug" element={<AboutDisease />} />
+        <Route path="/tesd/:slug" element={<AboutDisease />} />
         <Route path="/servicesPage" element={<ServicesPage />} />
+        <Route path="/atMediaPage" element={<AtMediaPage />} />
       </Routes>
     </Router>
   );

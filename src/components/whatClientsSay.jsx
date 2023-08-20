@@ -8,15 +8,28 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import { Navigation } from "swiper/modules";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const WhatClientsSay = () => {
+  // You can also pass an optional settings object
+  // below listed default settings
+  AOS.init({
+    // Global settings:
+    debounceDelay: 200, // the delay on debounce used while resizing window (advanced)
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: true, // whether elements should animate out while scrolling past them
+  });
+  AOS.init();
   return (
-    <div className="whatClientsSay text-center">
+    <div className="whatClientsSay text-center" id="whatClientsSay">
       <div className="container">
-        <h2 className="mb-5">Hasta Görüşleri</h2>
+        <h2 className="text-center color-blue">Hasta Görüşleri</h2>
+        <div className="line mb-5"></div>
+
         <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
           <SwiperSlide>
-            <div>
+            <div data-aos="fade-left">
               <p>
                 Lorem ipsum dolor sit fsyr, ds consectetur adipisicing elit.
                 Earum aut aspernatur quasi qui quod, libero corporis aliquam
@@ -25,11 +38,13 @@ const WhatClientsSay = () => {
                 iusto officiis at facilis, explicabo eos odit alias nulla
                 distinctio molestiae architecto dolor voluptate qui animi.
               </p>
+            </div>
+            <div data-aos="fade-left">
               <p className="text-bold">İ.. N..</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
+            <div data-aos="fade-left">
               <p>
                 Lorem ipsum dolor sit fsyr, ds consectetur adipisicing elit.
                 Earum aut aspernatur quasi qui quod, libero corporis aliquam
@@ -38,6 +53,8 @@ const WhatClientsSay = () => {
                 iusto officiis at facilis, explicabo eos odit alias nulla
                 distinctio molestiae architecto dolor voluptate qui animi.
               </p>
+            </div>
+            <div data-aos="fade-left">
               <p className="text-bold">İ.. N..</p>
             </div>
           </SwiperSlide>

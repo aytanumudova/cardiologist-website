@@ -14,8 +14,8 @@ const footer = () => {
     <div className="footer pt-5">
       <div className="container row m-auto">
         <div className="col-12 col-lg-4 mb-4 mg-lg-0">
-          <Link to={"/"} className="text-decoration-none">
-            <img src={logo} alt="navbar-brand" className="logo-footer" />
+          <Link to={"/"} className="text-decoration-none logo-footer">
+            <img src={logo} alt="navbar-brand" />
             Uzm.dr. Khayal Mirzayev
           </Link>
           <p className="mt-3">
@@ -25,14 +25,14 @@ const footer = () => {
           </p>
           <p>
             Randevu taleplerinizi
-            <span className="bold-text">0312 418 14 34</span> numarasından
+            <span className="bold-text"> 0312 418 14 34</span> numarasından
             telefon yoluyla bildirebilirsiniz.
           </p>
         </div>
         <div className="col-12 col-lg-4 d-flex flex-column mb-5 mb-lg-0 ps-lg-5">
           <h5>Kurumsal</h5>
           <Link to={"/aboutMe"}>Hakkımda</Link>
-          <Link to={"/"}>Basında</Link>
+          <Link to={"/atMediaPage"}>Basında</Link>
           <Link to={"/contact"}>İletişim</Link>
         </div>
         <div className="col-12 col-lg-4 d-flex flex-column">
@@ -63,7 +63,7 @@ const footer = () => {
         </div>
       </div>
       <div className="container copyrighter-row">
-        &copy; Copyright 2023 – KhayalMirza.com | Her hakkı saklıdır.
+        &copy; Copyright 2023 – Drkhayalmirze.com | Her hakkı saklıdır.
       </div>
     </div>
   );

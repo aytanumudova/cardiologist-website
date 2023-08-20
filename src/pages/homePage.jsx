@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/header";
 import Introsection from "../components/introsection";
-import Services from "../components/services";
+import Diseases from "../components/diseasesSection";
 import WhatClientsSay from "../components/whatClientsSay";
 import Videos from "../components/videos";
 import Footer from "../components/footer";
@@ -11,7 +11,7 @@ const homePage = () => {
     <div>
       <Header />
       <Introsection />
-      <Services />
+      <Diseases />
       <WhatClientsSay />
       <Videos />
       <Footer />

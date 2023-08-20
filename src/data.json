@@ -1,0 +1,80 @@
+[
+  {
+    "img": "https://res.cloudinary.com/dkongpllw/image/upload/v1691696809/ritim-bozukluk_tkedqo.jpg",
+    "header": "Kalp Sağlığı Nasıl Korunur?",
+    "info": "12 HAZ, 2023",
+    "slug": "kalp-sagligi",
+    "type": "d"
+  },
+  {
+    "img": "https://res.cloudinary.com/dkongpllw/image/upload/v1691696809/carpinti_biqwho.jpg",
+    "header": "Aritmi (Kalp Ritim Bozukluğu) Neden Olur, Belirtileri Nelerdir?",
+    "info": "12 HAZ, 2023",
+    "slug": "aritmi",
+    "type": "d"
+  },
+  {
+    "img": "https://res.cloudinary.com/dkongpllw/image/upload/v1691696809/kalp_yetersizligi_jg7zco.jpg",
+    "header": "Kalp Yetersizliği",
+    "info": "12 HAZ, 2023",
+    "slug": "kalp-yetersizligi",
+    "type": "d"
+  },
+  {
+    "img": "https://res.cloudinary.com/dkongpllw/image/upload/v1691696809/ritim-bozukluk_tkedqo.jpg",
+    "header": "Kalp Sağlığı Nasıl Korunur?",
+    "info": "12 HAZ, 2023",
+    "slug": "kalp-sagligi",
+    "type": "d"
+  },
+  {
+    "img": "https://res.cloudinary.com/dkongpllw/image/upload/v1691765854/tilt-test_umqjkw.jpg",
+    "header": "Tilt Testi",
+    "info": "12 HAZ, 2023",
+    "slug": "tilt-testi",
+    "type": "s"
+  },
+  {
+    "img": "https://res.cloudinary.com/dkongpllw/image/upload/v1691935306/ekg_dedek9.jpg",
+    "header": "Elektrokardiyografi (EKG)",
+    "info": "12 HAZ, 2023",
+    "slug": "elektrokardiyografi",
+    "type": "s"
+  },
+  {
+    "img": "https://res.cloudinary.com/dkongpllw/image/upload/v1691935500/efor-testi_vgtghc.jpg",
+    "header": "Efor Testi ( Treadmill Testi, Egzersiz Stres Testi)",
+    "info": "12 HAZ, 2023",
+    "slug": "efor-testi",
+    "type": "s"
+  },
+  {
+    "img": "https://res.cloudinary.com/dkongpllw/image/upload/v1691935584/kalp-pili_axjnvh.jpg",
+    "header": "Kalp Pili Kontrolü",
+    "info": "12 HAZ, 2023",
+    "slug": "kalp-pili-kontrolu",
+    "type": "s"
+  },
+  
+  {
+    "img": "https://res.cloudinary.com/dkongpllw/image/upload/v1692533082/trthaber_pjkkwd.jpg",
+    "header": "Trt Haber – Uzm. Dr. Khayal Mirzayev soruları yanıtlıyor",
+    "info": "12 HAZ, 2023",
+    "slug": "trt-haber",
+    "type": "a"
+  },
+  {
+    "img": "https://res.cloudinary.com/dkongpllw/image/upload/v1692533208/ukk_bdi6sn.jpg",
+    "header": "SKY Türk – 25. Ulusal Kardiyoloji Kongresi",
+    "info": "12 HAZ, 2023",
+    "slug": "UKK",
+    "type": "a"
+  },
+  {
+    "img": "https://res.cloudinary.com/dkongpllw/image/upload/v1692533348/hava-limani-kalp-destek_tjxmxm.jpg",
+    "header": "Havalimanlarına Acil Kalp Sağlığı Desteği",
+    "info": "12 HAZ, 2023",
+    "slug": "havalimani-kalp-destek",
+    "type": "a"
+  }
+]

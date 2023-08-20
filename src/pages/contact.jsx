@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import { Link } from "react-router-dom";
 
 import ReactDOM from "react-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,9 +19,9 @@ const contact = () => {
           <h1 className="mb-4 text-center">İletişim</h1>
           <div className=" font-weight-bold mt-4 mb-5 text-center nav-text ">
             <p>Hizmetlerimiz hakkında detaylı bilgi almak için bize ulaşın.</p>
-            <a href="#" className="text-decoration-none text-dark">
+            <Link to={"/"} className="text-decoration-none text-dark">
               Ana Sayfa
-            </a>
+            </Link>
             <span className="mx-3">{">>"}</span>
             <a className="color-blue text-decoration-none">İletişim</a>
           </div>

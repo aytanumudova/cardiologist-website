@@ -12,14 +12,16 @@ import { Autoplay, Pagination } from "swiper/modules";
 const videos = () => {
   return (
     <div className="container videos-section py-5 my-5">
-      <h2 className="text-center mb-4">Videolar</h2>
+      <h2 className="text-center color-blue">Videolar</h2>
+      <div className="line mb-5"></div>
+
       <Swiper
-              pagination={{
+        pagination={{
           clickable: true,
         }}
         modules={[Autoplay, Pagination]}
         autoplay={{
-          delay: 2500,
+          delay: 3500,
           disableOnInteraction: true,
         }}
         breakpoints={{
@@ -88,7 +90,6 @@ const videos = () => {
             </div>
           </div>
         </SwiperSlide>
-     
       </Swiper>
     </div>
   );

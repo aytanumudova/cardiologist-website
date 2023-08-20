@@ -5,6 +5,7 @@ import Footer from "../components/footer";
 
 import logo from "../assets/imgs/navbar/cardiology.png";
 import ReactDOM from "react-dom";
+import { Link } from "react-router-dom";
 
 const aboutMe = () => {
   return (
@@ -16,10 +17,10 @@ const aboutMe = () => {
           <small className="text-center d-block">
             GENEL VE AKADEMİK BİLGİLER
           </small>
-          <div className="my-3 font-weight-bold my-4 text-center">
-            <a href="#" className="text-decoration-none text-dark">
+          <div className="my-3 font-weight-bold my-4 text-center nav-text">
+            <Link to={"/"} className="text-decoration-none text-dark">
               Ana Sayfa
-            </a>
+            </Link>
             <span className="mx-3">{">>"}</span>
             <a className="color-blue text-decoration-none">Hakkımda</a>
           </div>

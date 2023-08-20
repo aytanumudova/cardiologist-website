@@ -1,22 +1,19 @@
 import React from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
+
 import Card from "./card";
-// import img1 from "../assets/imgs/services/image1.jpg";
-// import img2 from "../assets/imgs/services/ritim-bozukluk.jpeg";
-// import img3 from "../assets/imgs/services/kalp_yetersizligi.jpg";
-// import img4 from "../assets/imgs/services/carpinti.jpg";
+import { Link } from "react-router-dom";
 import datas from "../data.json";
 import { Cloudinary } from "@cloudinary/url-gen";
-import { Link } from "react-router-dom";
 
-const diseasesSection = () => {
+const atMediaPage = () => {
   const cld = new Cloudinary({ cloud: { cloudName: "dkongpllw" } });
-  const diseases = datas.filter((d) => d.type === "d");
+  const article = datas.filter((a) => a.type === "a");
   return (
     <div>
       <Header />
-      <div className="diseases-page">
+      <div className="atMedia-page">
         <div className="container">
           <h1 className="mb-4 text-center">Şikayet ve Tanı</h1>
           <div className="my-3 font-weight-bold my-4 text-center nav-text">
@@ -27,12 +24,12 @@ const diseasesSection = () => {
             <a className="color-blue text-decoration-none">Şikayet ve Tanı</a>
           </div>
           <div className="px-3 px-md-0 d-flex flex-column justify-content-center align-items-center">
-            {diseases.map((d) => (
+            {article.map((a) => (
               <Card
-                cardImg={d.img}
-                cardHeader={d.header}
-                cardInfo={d.info}
-                slug={d.slug}
+                cardImg={a.img}
+                cardHeader={a.header}
+                cardInfo={a.info}
+                slug={a.slug}
                 className="mb-5 col-12 col-md-8"
               />
             ))}
@@ -44,4 +41,4 @@ const diseasesSection = () => {
   );
 };
 
-export default diseasesSection;
+export default atMediaPage;
