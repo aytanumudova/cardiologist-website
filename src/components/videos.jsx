@@ -1,15 +1,17 @@
 import React, { useRef, useState } from "react";
-import img1 from "../assets/imgs/services/kalp-kapak.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
-// import required modules
 import { Autoplay, Pagination } from "swiper/modules";
+
+import Card from "../pages/videoCard";
+import videoDatas from "../videos.json";
+
 const videos = () => {
+  const videos = videoDatas.filter((v) => v.type === "v");
+
   return (
     <div className="container videos-section py-5 my-5">
       <h2 className="text-center color-blue">Videolar</h2>
@@ -40,56 +42,16 @@ const videos = () => {
         }}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <div class="card">
-            <a href="#">
-              <img class="card-img-top" src={img1} alt="Card image cap" />
-            </a>
-            <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div class="card">
-            <a href="#">
-              <img class="card-img-top" src={img1} alt="Card image cap" />
-            </a>
-            <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div class="card">
-            <a href="#">
-              <img class="card-img-top" src={img1} alt="Card image cap" />
-            </a>
-            <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div class="card">
-            <a href="#">
-              <img class="card-img-top" src={img1} alt="Card image cap" />
-            </a>
-            <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div class="card">
-            <a href="#">
-              <img class="card-img-top" src={img1} alt="Card image cap" />
-            </a>
-            <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-        </SwiperSlide>
+        {videos.map((v) => (
+          <SwiperSlide>
+            <Card
+              cardImg={v.img}
+              cardHeader={v.header}
+              cardInfo={v.info}
+              slug={v.slug}
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

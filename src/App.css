@@ -138,7 +138,7 @@
   margin-top: 20px;
 }
 .diseases-section .card {
-  border-radius: 20prgb (8, 8, 8);
+  border-radius: 20px;
   height: 370px;
   background-color: #f5f6fa;
   border: none;
@@ -172,7 +172,7 @@
   margin-right: 10px;
 }
 .bold-text {
-  font-weight: bold;
+  font-weight: 500;
 }
 .footer a {
   text-decoration: none;
@@ -283,44 +283,63 @@
   border-top-right-radius: 30px;
 }
 
-/* aboutDisease-section */
-.aboutDisease-section {
+/* aboutDisease-page */
+.aboutDisease-page {
   background-color: #f5f6fa;
   padding: 100px 0;
+}
+.aboutDisease-page .card {
+  border-radius: 20px;
+  height: 370px;
+  background-color: #f5f6fa;
+  border: none;
+}
+.aboutDisease-page .card-img-top {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+.card-text a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .nav-text {
   font-size: 13px !important;
 }
-.aboutDisease-section .article-image {
+.aboutDisease-page .article-image {
   border-radius: 30px;
   width: 90%;
   height: 430px;
   object-fit: cover;
 }
-.aboutDisease-section .article-text {
+.aboutDisease-page .article-text {
   line-height: 35px;
   padding-left: 90px;
   padding-right: 90px;
 }
 @media (max-width: 768px) {
-  .aboutDisease-section .article-text {
+  .aboutDisease-page .article-text {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 
-.aboutDisease-section .article-text p {
+.aboutDisease-page .article-text p {
   margin-bottom: 35px;
 }
-.aboutDisease-section span {
+.aboutDisease-page span {
   display: inline-block;
   margin-bottom: 15px;
 }
-.aboutDisease-section .card {
+.aboutDisease-page .card {
   background-color: transparent;
 }
-.aboutDisease-section .cards-container .card-img-top {
+.aboutDisease-page .cards-container .card-img-top {
   height: 200px;
   object-fit: cover;
 }

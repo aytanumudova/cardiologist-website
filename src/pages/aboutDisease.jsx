@@ -8,23 +8,29 @@ import img3 from "../assets/imgs/services/kalp_yetersizligi.jpg";
 import img4 from "../assets/imgs/services/carpinti.jpg";
 
 import { Link } from "react-router-dom";
+import Card from "./card";
+import datas from "../data.json";
 
 const aboutDisease = () => {
+  const diseases = datas.filter((d) => d.type === "d");
   return (
     <div>
-      <Header/>
-      <div className="aboutDisease-section">
+      <Header />
+      <div className="aboutDisease-page">
         <div className="container">
           <h1 className="mb-4 text-center">Kalp Sağlığı Nasıl Korunur?</h1>
-          <div className="my-3 my-4 text-center nav-text">
+          <div className="my-3 text-center nav-text">
             <Link to={"/"} className="text-decoration-none text-dark">
               Ana Sayfa
             </Link>
-            <span className="mx-3 color-blue">{">>"}</span>
-            <Link to={"/diseasesPage"} className="text-decoration-none text-dark" href="#">
+            <span className="mx-3">{">>"}</span>
+            <Link
+              to={"/diseasesPage"}
+              className="text-decoration-none text-dark"
+            >
               Şikayet ve Tanı
             </Link>
-            <span className="mx-3 color-blue">{">>"}</span>
+            <span className="mx-3 ">{">>"}</span>
             <a className="color-blue text-decoration-none">
               Kalp Sağlığı Nasıl Korunur?
             </a>
@@ -107,17 +113,26 @@ const aboutDisease = () => {
           <hr />
           <div className=" px-3 px-lg-0">
             <h2 className="my-4 pt-5">Benzer Yazılar</h2>
-            <div className="row cards-container">
-              <div class="card border-0 col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+            <div className="row cards-container ">
+              {diseases.slice(0, 3).map((d) => (
+                <Card
+                  cardImg={d.img}
+                  cardHeader={d.header}
+                  cardInfo={d.info}
+                  slug={d.slug}
+                  className={"col-12 col-md-6 col-lg-4"}
+                />
+              ))}
+              {/* <div class="card border-0 col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
                 <a className="card-head" href="#">
                   <img class="card-img-top" src={img2} alt="Card image cap" />
                 </a>
                 <div class="card-body">
                   <p class="card-text">
-                    <a href="#">
+                    <Link to={"/tesd/" + slug}>
                       Aritmi (Kalp Ritim Bozukluğu) Neden Olur, Belirtileri
                       Nelerdir?
-                    </a>
+                    </Link>
                   </p>
                   <small className="text-secondary">12 HAZ, 2023</small>
                 </div>
@@ -143,12 +158,12 @@ const aboutDisease = () => {
                   </p>
                   <small className="text-secondary">12 HAZ, 2023</small>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

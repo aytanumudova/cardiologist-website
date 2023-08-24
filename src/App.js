@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./main.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
 
@@ -12,7 +12,7 @@ import DiseasesPage from "./pages/diseasesPage";
 import AboutDisease from "./pages/aboutDisease";
 import ServicesPage from "./pages/servicesPage";
 import AtMediaPage from "./pages/atMediaPage";
-
+import OneVideoPage from "./pages/oneVideoPage";
 
 function App() {
   return (
@@ -22,7 +22,8 @@ function App() {
         <Route path="/aboutMe" element={<AboutMe />} />
         <Route path="/diseasesPage" element={<DiseasesPage />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/tesd/:slug" element={<AboutDisease />} />
+        <Route path="/dis/:slug" element={<AboutDisease />} />
+        <Route path="/vid/:slug" element={<OneVideoPage />} />
         <Route path="/servicesPage" element={<ServicesPage />} />
         <Route path="/atMediaPage" element={<AtMediaPage />} />
       </Routes>

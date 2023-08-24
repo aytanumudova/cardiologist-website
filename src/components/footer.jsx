@@ -19,7 +19,7 @@ const footer = () => {
             Uzm.dr. Khayal Mirzayev
           </Link>
           <p className="mt-3">
-            Prof. Dr. Khayal Mirzayev'e Sorularınızı
+            Prof. Dr. Khayal Mirzeyev'e Sorularınızı
             <span className="bold-text"> bilgi@khayalmirza.com</span>'dan
             e-posta yoluyla bildirebilirsiniz.
           </p>
@@ -63,7 +63,7 @@ const footer = () => {
         </div>
       </div>
       <div className="container copyrighter-row">
-        &copy; Copyright 2023 – Drkhayalmirze.com | Her hakkı saklıdır.
+        &copy; Copyright 2023 – Drkhayalmirza.com | Her hakkı saklıdır.
       </div>
     </div>
   );

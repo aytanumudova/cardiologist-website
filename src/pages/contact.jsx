@@ -17,13 +17,13 @@ const contact = () => {
       <div className="contact-section">
         <div className="container">
           <h1 className="mb-4 text-center">İletişim</h1>
-          <div className=" font-weight-bold mt-4 mb-5 text-center nav-text ">
+          <div className="font-weight-bold mt-4 mb-5 text-center nav-text">
             <p>Hizmetlerimiz hakkında detaylı bilgi almak için bize ulaşın.</p>
             <Link to={"/"} className="text-decoration-none text-dark">
               Ana Sayfa
             </Link>
             <span className="mx-3">{">>"}</span>
-            <a className="color-blue text-decoration-none">İletişim</a>
+            <a className="text-decoration-none">İletişim</a>
           </div>
           <div className="google-map-code m-auto col-11 col-md-9">
             <iframe

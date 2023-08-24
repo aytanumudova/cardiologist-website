@@ -23,7 +23,7 @@ const servicesPage = () => {
               Ana Sayfa
             </Link>
             <span className="mx-3">{">>"}</span>
-            <a className="color-blue text-decoration-none">Şikayet ve Tanı</a>
+            <a className="text-decoration-none">İşlemler</a>
           </div>
           <div className="px-3 px-md-0 d-flex flex-column justify-content-center align-items-center">
             {services.map((service) => (

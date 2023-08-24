@@ -2,10 +2,7 @@ import React from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Card from "./card";
-// import img1 from "../assets/imgs/services/image1.jpg";
-// import img2 from "../assets/imgs/services/ritim-bozukluk.jpeg";
-// import img3 from "../assets/imgs/services/kalp_yetersizligi.jpg";
-// import img4 from "../assets/imgs/services/carpinti.jpg";
+
 import datas from "../data.json";
 import { Cloudinary } from "@cloudinary/url-gen";
 import { Link } from "react-router-dom";
@@ -24,7 +21,7 @@ const diseasesSection = () => {
               Ana Sayfa
             </Link>
             <span className="mx-3">{">>"}</span>
-            <a className="color-blue text-decoration-none">Şikayet ve Tanı</a>
+            <a className="text-decoration-none">Şikayet ve Tanı</a>
           </div>
           <div className="px-3 px-md-0 d-flex flex-column justify-content-center align-items-center">
             {diseases.map((d) => (

@@ -1,0 +1,392 @@
+* {
+  font-family: "Fira Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-size: 42px;
+}
+
+$navbar-brand-color: #9ae2ff;
+$light-gray: #f5f6fa;
+$medium-blue: #002742;
+
+.bg-blue {
+  background-color: $medium-blue;
+}
+.section {
+  background-color: $light-gray;
+  padding: 100px 0;
+}
+.card-style {
+  border-radius: 30px;
+  height: 370px;
+  background-color: transparent;
+  border: none;
+}
+.card-img-style {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+.card-text-a-style {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+}
+.custom-gradient {
+  background: #020024;
+  background: linear-gradient(270deg, #020024 0%, #023552 0%, #025a82 100%);
+}
+.nav-text {
+  font-size: 13px !important;
+  font-weight: 500;
+  span,
+  a {
+    color: #025a82;
+  }
+}
+
+/* Navbar */
+.navbar {
+  @extend .custom-gradient;
+  .navbar-toggler {
+    border: none !important;
+    font-size: 30px !important;
+    &:focus {
+      text-decoration: none;
+      outline: 0;
+      box-shadow: none !important;
+    }
+  }
+
+  .navbar-brand {
+    color: $navbar-brand-color !important;
+    font-weight: 500 !important;
+    img {
+      width: 50px;
+      margin-right: 10px;
+    }
+  }
+
+  .language img {
+    width: 26px;
+  }
+
+  .nav-item {
+    font-size: 16px;
+  }
+  .nav-link:hover {
+    color: $medium-blue !important;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-item {
+    border: 1px solid #fff !important;
+    border-radius: 30px;
+    font-size: 15px;
+    &:last-child {
+      border: none !important;
+    }
+
+    &:not(:last-child):hover {
+      border: 1px solid #002742 !important;
+      border-radius: 30px;
+      transition: 200ms ease-in;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .navbar-toggler {
+      font-size: 25px !important;
+    }
+  }
+}
+
+/* Introsection */
+.introsection {
+  height: 86vh;
+  width: 100%;
+  background-image: url("./assets/imgs/introsection/cardiology.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .myBtn {
+    color: #fff;
+    border: 1px solid #fff;
+    &:hover {
+      color: $medium-blue !important;
+      border: 1px solid $medium-blue !important;
+      transition: 200ms ease-in;
+    }
+  }
+}
+
+/* WhatClientsSay Section */
+.whatClientsSay {
+  background-color: $light-gray;
+  padding: 70px 40px 100px;
+
+  .mySwiper {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 60px;
+  }
+}
+
+/* Videos Section */
+.videos-section {
+  .card {
+    @extend .card-style;
+  }
+  .video-card-top {
+    @extend .card-img-style;
+  }
+  .card-text a {
+    @extend .card-text-a-style;
+  }
+  .mySwiper {
+    padding-bottom: 50px !important;
+  }
+}
+
+/* Diseases Section  */
+.diseases-section {
+  .line {
+    border: 1px solid #00548b;
+    width: 100px;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .card {
+    @extend .card-style;
+  }
+  .card-img-top {
+    @extend .card-img-style;
+  }
+
+  .card-text a {
+    @extend .card-text-a-style;
+  }
+  .mySwiper {
+    padding-bottom: 50px !important;
+  }
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid #e4e4e4;
+  a {
+    text-decoration: none;
+    color: #000;
+    &:hover {
+      text-decoration: underline;
+      transition: 0.3ms;
+    }
+  }
+  .logo-footer {
+    width: 45px;
+    margin-right: 8px;
+    color: #58b0fe !important;
+    font-weight: 500 !important;
+    img {
+      width: 50px;
+      margin-right: 10px;
+    }
+  }
+  .copyrighter-row {
+    margin-top: 90px;
+    margin-bottom: 20px;
+  }
+  .bold-text {
+    font-weight: 500;
+  }
+  .info-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  .icon {
+    color: $medium-blue;
+  }
+}
+
+/* Aboutme Section */
+.myNavbar {
+  @extend .custom-gradient;
+}
+.aboutme-section {
+  @extend .section;
+  .doctorImg-container {
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    border-radius: 30px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 30px;
+    }
+  }
+
+  .info-rows-container span {
+    background-color: $medium-blue;
+    color: #fff;
+    border-radius: 45%;
+    padding: 2px 5px;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+}
+
+/* Diseases Page */
+.diseases-page {
+  @extend .section;
+  .card {
+    @extend .card-style;
+    height: 400px;
+    margin-bottom: 5rem !important;
+  }
+
+  .card-head img {
+    @extend .card-img-style;
+    border-radius: 30px;
+    height: 22rem;
+  }
+  .card-text a {
+    @extend .card-text-a-style;
+  }
+}
+
+/* AtMedia Page */
+.atMedia-page {
+  @extend .section;
+  .card {
+    @extend .card-style;
+    height: 400px;
+    margin-bottom: 5rem !important;
+  }
+
+  .card-head img {
+    @extend .card-img-style;
+    border-radius: 30px;
+    height: 22rem;
+  }
+  .card-text a {
+    @extend .card-text-a-style;
+  }
+}
+
+/* AboutDisease Page */
+.aboutDisease-page {
+  @extend .section;
+
+  .article-image {
+    border-radius: 30px;
+    width: 90%;
+    height: 430px;
+    object-fit: cover;
+  }
+  .article-text {
+    line-height: 35px;
+    padding-left: 90px;
+    padding-right: 90px;
+    p {
+      margin-bottom: 35px;
+    }
+  }
+
+  span {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  .card {
+    @extend .card-style;
+  }
+  .cards-container .card-img-top {
+    @extend .card-img-style;
+  }
+  .card-text a {
+    @extend .card-text-a-style;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutDisease-section .article-text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Contact Section */
+.contact-section {
+  @extend .section;
+  .info-row a {
+    text-decoration: none;
+    color: #000;
+    &:hover {
+      text-decoration: underline;
+      transition: 0.3ms;
+    }
+  }
+  .myIframe {
+    border-radius: 20px;
+    box-shadow: 4px 34px 60px -30px rgba(0, 0, 0, 0.28);
+    -webkit-box-shadow: 4px 34px 60px -30px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 4px 34px 60px -30px rgba(0, 0, 0, 0.28);
+  }
+  .myForm input:not([type="checkbox"]),
+  textarea {
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #e4e4e4;
+    background-color: #efeff2;
+    padding: 7px 15px;
+    font-size: 15px;
+    outline: none;
+    caret-color: #5e5e5e;
+    &:focus {
+      border-color: #c5c5c5;
+    }
+  }
+  .info-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  .icon {
+    color: $medium-blue;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    color: #a0a0a0;
+  }
+}
+
+/* Services Page */
+.services-page {
+  @extend .section;
+  .card {
+    @extend .card-style;
+    height: 400px;
+    margin-bottom: 5rem !important;
+  }
+
+  .card-head img {
+    @extend .card-img-style;
+    border-radius: 30px;
+    height: 22rem;
+  }
+  .card-text a {
+    @extend .card-text-a-style;
+  }
+}

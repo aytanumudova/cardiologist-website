@@ -22,7 +22,7 @@ const aboutMe = () => {
               Ana Sayfa
             </Link>
             <span className="mx-3">{">>"}</span>
-            <a className="color-blue text-decoration-none">Hakkımda</a>
+            <a className="text-decoration-none">Hakkımda</a>
           </div>
           <div className="doctorImg-container col-12 col-md-9  px-4 px-md-0">
             <img src={doctorImg} alt="doctor-image" />

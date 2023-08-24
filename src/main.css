@@ -1,0 +1,314 @@
+* {
+  font-family: "Fira Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+.bg-blue {
+  background-color: #002742;
+}
+
+.section, .services-page, .contact-section, .aboutDisease-page, .atMedia-page, .diseases-page, .aboutme-section {
+  background-color: #f5f6fa;
+  padding: 100px 0;
+}
+
+.card-style, .services-page .card, .aboutDisease-page .card, .atMedia-page .card, .diseases-page .card, .diseases-section .card, .videos-section .card {
+  border-radius: 30px;
+  height: 370px;
+  background-color: transparent;
+  border: none;
+}
+
+.card-img-style, .services-page .card-head img, .aboutDisease-page .cards-container .card-img-top, .atMedia-page .card-head img, .diseases-page .card-head img, .diseases-section .card-img-top, .videos-section .video-card-top {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-text-a-style, .services-page .card-text a, .aboutDisease-page .card-text a, .atMedia-page .card-text a, .diseases-page .card-text a, .diseases-section .card-text a, .videos-section .card-text a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.custom-gradient, .myNavbar, .navbar {
+  background: #020024;
+  background: linear-gradient(270deg, #020024 0%, #023552 0%, #025a82 100%);
+}
+
+.nav-text {
+  font-size: 13px !important;
+  font-weight: 500;
+}
+.nav-text span,
+.nav-text a {
+  color: #025a82;
+}
+
+/* Navbar */
+.navbar .navbar-toggler {
+  border: none !important;
+  font-size: 30px !important;
+}
+.navbar .navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none !important;
+}
+.navbar .navbar-brand {
+  color: #9ae2ff !important;
+  font-weight: 500 !important;
+}
+.navbar .navbar-brand img {
+  width: 50px;
+  margin-right: 10px;
+}
+.navbar .language img {
+  width: 26px;
+}
+.navbar .nav-item {
+  font-size: 16px;
+}
+.navbar .nav-link:hover {
+  color: #002742 !important;
+}
+.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+@media (min-width: 992px) {
+  .nav-item {
+    border: 1px solid #fff !important;
+    border-radius: 30px;
+    font-size: 15px;
+  }
+  .nav-item:last-child {
+    border: none !important;
+  }
+  .nav-item:not(:last-child):hover {
+    border: 1px solid #002742 !important;
+    border-radius: 30px;
+    transition: 200ms ease-in;
+  }
+}
+@media (min-width: 992px) and (max-width: 768px) {
+  .navbar-toggler {
+    font-size: 25px !important;
+  }
+}
+/* Introsection */
+.introsection {
+  height: 86vh;
+  width: 100%;
+  background-image: url("./assets/imgs/introsection/cardiology.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.introsection .myBtn {
+  color: #fff;
+  border: 1px solid #fff;
+}
+.introsection .myBtn:hover {
+  color: #002742 !important;
+  border: 1px solid #002742 !important;
+  transition: 200ms ease-in;
+}
+
+/* WhatClientsSay Section */
+.whatClientsSay {
+  background-color: #f5f6fa;
+  padding: 70px 40px 100px;
+}
+.whatClientsSay .mySwiper {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 60px;
+}
+
+/* Videos Section */
+.videos-section .mySwiper {
+  padding-bottom: 50px !important;
+}
+
+/* Diseases Section  */
+.diseases-section .line {
+  border: 1px solid #00548b;
+  width: 100px;
+  margin: auto;
+  margin-top: 20px;
+}
+.diseases-section .mySwiper {
+  padding-bottom: 50px !important;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid #e4e4e4;
+}
+.footer a {
+  text-decoration: none;
+  color: #000;
+}
+.footer a:hover {
+  text-decoration: underline;
+  transition: 0.3ms;
+}
+.footer .logo-footer {
+  width: 45px;
+  margin-right: 8px;
+  color: #58b0fe !important;
+  font-weight: 500 !important;
+}
+.footer .logo-footer img {
+  width: 50px;
+  margin-right: 10px;
+}
+.footer .copyrighter-row {
+  margin-top: 90px;
+  margin-bottom: 20px;
+}
+.footer .bold-text {
+  font-weight: 500;
+}
+.footer .info-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.footer .icon {
+  color: #002742;
+}
+
+/* Aboutme Section */
+.aboutme-section .doctorImg-container {
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  border-radius: 30px;
+}
+.aboutme-section .doctorImg-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px;
+}
+.aboutme-section .info-rows-container span {
+  background-color: #002742;
+  color: #fff;
+  border-radius: 45%;
+  padding: 2px 5px;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+/* Diseases Page */
+.diseases-page .card {
+  height: 400px;
+  margin-bottom: 5rem !important;
+}
+.diseases-page .card-head img {
+  border-radius: 30px;
+  height: 22rem;
+}
+/* AtMedia Page */
+.atMedia-page .card {
+  height: 400px;
+  margin-bottom: 5rem !important;
+}
+.atMedia-page .card-head img {
+  border-radius: 30px;
+  height: 22rem;
+}
+/* AboutDisease Page */
+.aboutDisease-page .article-image {
+  border-radius: 30px;
+  width: 90%;
+  height: 430px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.aboutDisease-page .article-text {
+  line-height: 35px;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+.aboutDisease-page .article-text p {
+  margin-bottom: 35px;
+}
+.aboutDisease-page span {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  .aboutDisease-section .article-text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+/* Contact Section */
+.contact-section .info-row a {
+  text-decoration: none;
+  color: #000;
+}
+.contact-section .info-row a:hover {
+  text-decoration: underline;
+  transition: 0.3ms;
+}
+.contact-section .myIframe {
+  border-radius: 20px;
+  box-shadow: 4px 34px 60px -30px rgba(0, 0, 0, 0.28);
+  -webkit-box-shadow: 4px 34px 60px -30px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 4px 34px 60px -30px rgba(0, 0, 0, 0.28);
+}
+.contact-section .myForm input:not([type=checkbox]),
+.contact-section textarea {
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #e4e4e4;
+  background-color: #efeff2;
+  padding: 7px 15px;
+  font-size: 15px;
+  outline: none;
+  caret-color: #5e5e5e;
+}
+.contact-section .myForm input:not([type=checkbox]):focus,
+.contact-section textarea:focus {
+  border-color: #c5c5c5;
+}
+.contact-section .info-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.contact-section .icon {
+  color: #002742;
+}
+.contact-section input::-moz-placeholder, .contact-section textarea::-moz-placeholder {
+  color: #a0a0a0;
+}
+.contact-section input::placeholder,
+.contact-section textarea::placeholder {
+  color: #a0a0a0;
+}
+
+/* Services Page */
+.services-page .card {
+  height: 400px;
+  margin-bottom: 5rem !important;
+}
+.services-page .card-head img {
+  border-radius: 30px;
+  height: 22rem;
+}/*# sourceMappingURL=main.css.map */

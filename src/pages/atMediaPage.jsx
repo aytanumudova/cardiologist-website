@@ -15,13 +15,13 @@ const atMediaPage = () => {
       <Header />
       <div className="atMedia-page">
         <div className="container">
-          <h1 className="mb-4 text-center">Şikayet ve Tanı</h1>
-          <div className="my-3 font-weight-bold my-4 text-center nav-text">
+          <h1 className="mb-4 text-center">Basında</h1>
+          <div className="my-3 my-4 text-center nav-text">
             <Link to={"/"} className="text-decoration-none text-dark">
               Ana Sayfa
             </Link>
             <span className="mx-3">{">>"}</span>
-            <a className="color-blue text-decoration-none">Şikayet ve Tanı</a>
+            <a className=" text-decoration-none">Basında</a>
           </div>
           <div className="px-3 px-md-0 d-flex flex-column justify-content-center align-items-center">
             {article.map((a) => (
