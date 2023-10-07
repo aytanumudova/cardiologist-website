@@ -107,7 +107,7 @@ h2 {
 }
 /* Introsection */
 .introsection {
-  height: 86vh;
+  height: 100vh;
   width: 100%;
   background-image: url("./assets/imgs/introsection/cardiology.jpg");
   background-repeat: no-repeat;
@@ -191,9 +191,7 @@ h2 {
 
 /* Aboutme Section */
 .aboutme-section .doctorImg-container {
-  width: 600px;
-  height: 400px;
-  margin: auto;
+  height: 300px;
   border-radius: 30px;
 }
 .aboutme-section .doctorImg-container img {
@@ -240,8 +238,6 @@ h2 {
 }
 .aboutDisease-page .article-text {
   line-height: 35px;
-  padding-left: 90px;
-  padding-right: 90px;
 }
 .aboutDisease-page .article-text p {
   margin-bottom: 35px;

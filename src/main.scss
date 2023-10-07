@@ -112,7 +112,7 @@ $medium-blue: #002742;
 
 /* Introsection */
 .introsection {
-  height: 86vh;
+  height: 100vh;
   width: 100%;
   background-image: url("./assets/imgs/introsection/cardiology.jpg");
   background-repeat: no-repeat;
@@ -225,9 +225,7 @@ $medium-blue: #002742;
 .aboutme-section {
   @extend .section;
   .doctorImg-container {
-    width: 600px;
-    height: 400px;
-    margin: auto;
+    height: 300px;
     border-radius: 30px;
     img {
       width: 100%;
@@ -297,8 +295,7 @@ $medium-blue: #002742;
   }
   .article-text {
     line-height: 35px;
-    padding-left: 90px;
-    padding-right: 90px;
+
     p {
       margin-bottom: 35px;
     }

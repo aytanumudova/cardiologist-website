@@ -24,7 +24,7 @@ const aboutMe = () => {
             <span className="mx-3">{">>"}</span>
             <a className="text-decoration-none">Hakkımda</a>
           </div>
-          <div className="doctorImg-container col-12 col-md-9  px-4 px-md-0">
+          <div className="doctorImg-container col-12 col-md-9 px-4 px-md-0">
             <img src={doctorImg} alt="doctor-image" />
           </div>
           <div className="mt-5 pt-3 info-rows-container row px-4">

@@ -43,7 +43,7 @@ const aboutDisease = () => {
               alt="article-image"
             />
           </div>
-          <div className="article-text py-5 mt-2">
+          <div className="article-text py-5 mt-2 ms-3 me-3">
             <p>
               Kalp, tüm vücudun sağlığını etkileyen ve sağlıklı çalışmaması
               durumunda ciddi sağlık riskleri doğurabilecek bir organdır.
@@ -123,42 +123,6 @@ const aboutDisease = () => {
                   className={"col-12 col-md-6 col-lg-4"}
                 />
               ))}
-              {/* <div class="card border-0 col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
-                <a className="card-head" href="#">
-                  <img class="card-img-top" src={img2} alt="Card image cap" />
-                </a>
-                <div class="card-body">
-                  <p class="card-text">
-                    <Link to={"/tesd/" + slug}>
-                      Aritmi (Kalp Ritim Bozukluğu) Neden Olur, Belirtileri
-                      Nelerdir?
-                    </Link>
-                  </p>
-                  <small className="text-secondary">12 HAZ, 2023</small>
-                </div>
-              </div>
-              <div class="card border-0 col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
-                <a className="card-head" href="#">
-                  <img class="card-img-top" src={img3} alt="Card image cap" />
-                </a>
-                <div class="card-body">
-                  <p class="card-text">
-                    <a href="#">Kalp Yetersizliği</a>
-                  </p>
-                  <small className="text-secondary">12 HAZ, 2023</small>
-                </div>
-              </div>
-              <div class="card border-0 col-12 col-md-6 col-lg-4">
-                <a className="card-head" href="#">
-                  <img class="card-img-top" src={img4} alt="Card image cap" />
-                </a>
-                <div class="card-body">
-                  <p class="card-text">
-                    <a href="#">Kalp Çarpıntısı</a>
-                  </p>
-                  <small className="text-secondary">12 HAZ, 2023</small>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
