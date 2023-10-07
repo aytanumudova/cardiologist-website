@@ -8,7 +8,7 @@ const header = () => {
     <div className="header">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <Link class="navbar-brand" to={"/"}>
+          <Link class="navbar-brand ms-0 ms-md-3" to={"/"}>
             <img src={navbarBrand} alt="navbar-brand" />
             Uzm.dr. Khayal Mirzayev
           </Link>
