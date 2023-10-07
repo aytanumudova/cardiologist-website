@@ -126,12 +126,10 @@ h2 {
 /* WhatClientsSay Section */
 .whatClientsSay {
   background-color: #f5f6fa;
-  padding: 70px 40px 100px;
 }
 .whatClientsSay .mySwiper {
   background-color: #fff;
   border-radius: 20px;
-  padding: 60px;
 }
 
 /* Videos Section */

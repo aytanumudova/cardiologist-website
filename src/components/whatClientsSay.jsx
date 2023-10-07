@@ -11,24 +11,20 @@ import { Navigation } from "swiper/modules";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const WhatClientsSay = () => {
-  // You can also pass an optional settings object
-  // below listed default settings
   AOS.init({
-    // Global settings:
-    debounceDelay: 200, // the delay on debounce used while resizing window (advanced)
-    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-    once: false, // whether animation should happen only once - while scrolling down
-    mirror: true, // whether elements should animate out while scrolling past them
+    debounceDelay: 200,
+    once: false,
+    mirror: true,
   });
   AOS.init();
   return (
-    <div className="whatClientsSay text-center" id="whatClientsSay">
+    <div className="whatClientsSay text-center py-5 px-2" id="whatClientsSay">
       <div className="container">
         <h2 className="text-center color-blue">Hasta Görüşleri</h2>
         <div className="line mb-5"></div>
 
-        <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-          <SwiperSlide>
+        <Swiper navigation={true} modules={[Navigation]} className="mySwiper ">
+          <SwiperSlide className="col-12 p-5">
             <div data-aos="fade-left">
               <p>
                 Lorem ipsum dolor sit fsyr, ds consectetur adipisicing elit.
@@ -43,7 +39,7 @@ const WhatClientsSay = () => {
               <p className="text-bold">İ.. N..</p>
             </div>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="col-12 p-5">
             <div data-aos="fade-left">
               <p>
                 Lorem ipsum dolor sit fsyr, ds consectetur adipisicing elit.
@@ -58,6 +54,7 @@ const WhatClientsSay = () => {
               <p className="text-bold">İ.. N..</p>
             </div>
           </SwiperSlide>
+         
         </Swiper>
       </div>
     </div>
