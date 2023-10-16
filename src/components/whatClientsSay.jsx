@@ -13,22 +13,25 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 const WhatClientsSay = () => {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      debounceDelay: 200,
+      once: false,
+      mirror: true,
+    });
   }, []);
-  AOS.init({
-    debounceDelay: 200,
-    once: false,
-    mirror: false,
-    
-  });
-  // AOS.init();
+  
   return (
     <div className="whatClientsSay text-center py-5 px-2" id="whatClientsSay">
       <div className="container">
         <h2 className="text-center color-blue">Hasta Görüşleri</h2>
         <div className="line mb-5"></div>
 
-        <Swiper navigation={true} modules={[Navigation]} loop={true} className="mySwiper ">
+        <Swiper
+          navigation={true}
+          modules={[Navigation]}
+          loop={true}
+          className="mySwiper "
+        >
           <SwiperSlide className="col-12 p-5">
             <div data-aos="fade-left">
               <p>
@@ -59,7 +62,6 @@ const WhatClientsSay = () => {
               <p className="text-bold">İ.. N..</p>
             </div>
           </SwiperSlide>
-         
         </Swiper>
       </div>
     </div>

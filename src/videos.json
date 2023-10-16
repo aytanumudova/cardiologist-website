@@ -1,30 +1,27 @@
 [
   {
-    "img": "https://perfumerapp.com/background.mp4",
+    "img": "/imgs/videosSection/videoframe.jpg",
     "header": "Ritim bozukluğu nasıl tedavi edilir?",
     "info": "12 HAZ, 2023",
     "slug": "ritim-bozukluk-tedavi",
+    "key": "01",
+    "type": "v"
+  },
+
+  {
+    "img": "/imgs/videosSection/videoframe.jpg",
+    "header": "Ritim bozukluğu nasıl tedavi edilir?",
+    "info": "12 HAZ, 2023",
+    "slug": "ritim-bozukluk-tedavi",
+    "key": "02",
     "type": "v"
   },
   {
-    "img": "https://perfumerapp.com/background.mp4",
+    "img": "/imgs/videosSection/videoframe.jpg",
     "header": "Ritim bozukluğu nasıl tedavi edilir?",
     "info": "12 HAZ, 2023",
     "slug": "ritim-bozukluk-tedavi",
-    "type": "v"
-  },
-  {
-    "img": "https://perfumerapp.com/background.mp4",
-    "header": "Ritim bozukluğu nasıl tedavi edilir?",
-    "info": "12 HAZ, 2023",
-    "slug": "ritim-bozukluk-tedavi",
-    "type": "v"
-  },
-  {
-    "img": "https://perfumerapp.com/background.mp4",
-    "header": "Ritim bozukluğu nasıl tedavi edilir?",
-    "info": "12 HAZ, 2023",
-    "slug": "ritim-bozukluk-tedavi",
+    "key": "03",
     "type": "v"
   }
 ]

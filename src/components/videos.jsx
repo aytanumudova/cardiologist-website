@@ -22,6 +22,7 @@ const videos = () => {
           clickable: true,
         }}
         modules={[Autoplay, Pagination]}
+        loop={true}
         autoplay={{
           delay: 3500,
           disableOnInteraction: true,
@@ -49,6 +50,7 @@ const videos = () => {
               cardHeader={v.header}
               cardInfo={v.info}
               slug={v.slug}
+              key={v.slug}
             />
           </SwiperSlide>
         ))}

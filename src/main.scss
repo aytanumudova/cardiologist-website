@@ -19,14 +19,13 @@ $medium-blue: #002742;
   padding: 100px 0;
 }
 .card-style {
-  border-radius: 30px;
+  border-radius: 20px;
   height: 370px;
   background-color: transparent;
   border: none;
 }
 .card-img-style {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-radius: 20px;
   width: 100%;
   height: 15rem;
   object-fit: cover;
@@ -47,6 +46,36 @@ $medium-blue: #002742;
   span,
   a {
     color: #025a82;
+  }
+}
+.card-head {
+  position: relative;
+  &:hover .overlay {
+    opacity: 1;
+    transition: 0.2s ease-in;
+  }
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  border-radius: 20px;
+  .link-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: all 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    color: #fff;
+    top: 50%;
+    left: 50%;
   }
 }
 
@@ -90,7 +119,7 @@ $medium-blue: #002742;
 @media (min-width: 992px) {
   .nav-item {
     border: 1px solid #fff !important;
-    border-radius: 30px;
+    border-radius: 20px;
     font-size: 15px;
     &:last-child {
       border: none !important;
@@ -98,7 +127,7 @@ $medium-blue: #002742;
 
     &:not(:last-child):hover {
       border: 1px solid #002742 !important;
-      border-radius: 30px;
+      border-radius: 20px;
       transition: 200ms ease-in;
     }
   }
@@ -224,12 +253,11 @@ $medium-blue: #002742;
   @extend .section;
   .doctorImg-container {
     height: 300px;
-    border-radius: 30px;
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      border-radius: 30px;
+      border-radius: 20px;
     }
   }
 
@@ -254,7 +282,6 @@ $medium-blue: #002742;
 
   .card-head img {
     @extend .card-img-style;
-    border-radius: 30px;
     height: 22rem;
   }
   .card-text a {
@@ -273,7 +300,6 @@ $medium-blue: #002742;
 
   .card-head img {
     @extend .card-img-style;
-    border-radius: 30px;
     height: 22rem;
   }
   .card-text a {
@@ -284,21 +310,18 @@ $medium-blue: #002742;
 /* AboutDisease Page */
 .aboutDisease-page {
   @extend .section;
-
   .article-image {
-    border-radius: 30px;
+    border-radius: 20px;
     width: 90%;
     height: 430px;
     object-fit: cover;
   }
   .article-text {
     line-height: 35px;
-
     p {
       margin-bottom: 35px;
     }
   }
-
   span {
     display: inline-block;
     margin-bottom: 15px;
@@ -318,6 +341,26 @@ $medium-blue: #002742;
   .aboutDisease-section .article-text {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+/* OneVideo Page */
+.oneVideo-page {
+  @extend .section;
+  iframe {
+    border-radius: 20px;
+    width: 90%;
+    height: 430px;
+    object-fit: cover;
+  }
+  .card {
+    @extend .card-style;
+  }
+  .cards-container .card-img-top {
+    @extend .card-img-style;
+  }
+  .card-text a {
+    @extend .card-text-a-style;
   }
 }
 
@@ -378,7 +421,6 @@ $medium-blue: #002742;
 
   .card-head img {
     @extend .card-img-style;
-    border-radius: 30px;
     height: 22rem;
   }
   .card-text a {
