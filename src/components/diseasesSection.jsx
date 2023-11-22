@@ -11,6 +11,7 @@ import { Cloudinary } from "@cloudinary/url-gen";
 const services = () => {
   const cld = new Cloudinary({ cloud: { cloudName: "dkongpllw" } });
   const diseases = datas.filter((d) => d.type === "d");
+  
   return (
     <div className="diseases-section container my-5 py-5">
       <h2 className="text-center color-blue">Şikayet ve Tanı</h2>

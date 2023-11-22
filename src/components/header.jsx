@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const header = () => {
   return (
     <div className="header">
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand-lg  fixed-top">
         <div className="container-fluid">
           <Link className="navbar-brand ms-0 ms-md-3" to={"/"}>
             <img src={navbarBrand} alt="navbar-brand" />

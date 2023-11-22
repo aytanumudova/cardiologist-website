@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -18,11 +17,11 @@ const videos = () => {
       <div className="line mb-5"></div>
 
       <Swiper
+      loop={true}
         pagination={{
           clickable: true,
         }}
         modules={[Autoplay, Pagination]}
-        loop={true}
         autoplay={{
           delay: 3500,
           disableOnInteraction: true,

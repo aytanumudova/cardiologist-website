@@ -84,6 +84,13 @@ h2 {
   left: 50%;
 }
 
+.line {
+  border: 1px solid #00548b;
+  width: 100px;
+  margin: auto;
+  margin-top: 20px;
+}
+
 /* Navbar */
 .navbar .navbar-toggler {
   border: none !important;
@@ -168,12 +175,6 @@ h2 {
 }
 
 /* Diseases Section  */
-.diseases-section .line {
-  border: 1px solid #00548b;
-  width: 100px;
-  margin: auto;
-  margin-top: 20px;
-}
 .diseases-section .mySwiper {
   padding-bottom: 50px !important;
 }

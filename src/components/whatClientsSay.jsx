@@ -25,7 +25,6 @@ const WhatClientsSay = () => {
       <div className="container">
         <h2 className="text-center color-blue">Hasta Görüşleri</h2>
         <div className="line mb-5"></div>
-
         <Swiper
           navigation={true}
           modules={[Navigation]}

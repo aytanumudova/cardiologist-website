@@ -78,7 +78,12 @@ $medium-blue: #002742;
     left: 50%;
   }
 }
-
+.line {
+  border: 1px solid #00548b;
+  width: 100px;
+  margin: auto;
+  margin-top: 20px;
+}
 /* Navbar */
 .navbar {
   @extend .custom-gradient;
@@ -185,12 +190,6 @@ $medium-blue: #002742;
 
 /* Diseases Section  */
 .diseases-section {
-  .line {
-    border: 1px solid #00548b;
-    width: 100px;
-    margin: auto;
-    margin-top: 20px;
-  }
   .card {
     @extend .card-style;
   }
