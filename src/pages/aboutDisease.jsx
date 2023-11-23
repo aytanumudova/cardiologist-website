@@ -5,6 +5,12 @@ import Footer from "../components/footer";
 import img1 from "../assets/imgs/services/image1.jpg";
 
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Autoplay, Pagination } from "swiper/modules";
+
 import Card from "./card";
 import datas from "../data.json";
 
@@ -108,18 +114,45 @@ const aboutDisease = () => {
             </p>
           </div>
           <hr />
-          <div className=" px-3 px-lg-0">
+          <div className="px-3 px-lg-0">
             <h2 className="my-4 pt-5">Benzer Yazılar</h2>
-            <div className="row cards-container ">
-              {diseases.slice(0, 3).map((d) => (
-                <Card
-                  cardImg={d.img}
-                  cardHeader={d.header}
-                  cardInfo={d.info}
-                  slug={d.slug}
-                  className={"col-12 col-md-6 col-lg-4"}
-                />
-              ))}
+            <div className="diseases-section container mt-5 pt-5">
+              <Swiper
+                pagination={{
+                  clickable: true,
+                }}
+                modules={[Autoplay, Pagination]}
+                autoplay={{
+                  delay: 3500,
+                  disableOnInteraction: true,
+                }}
+                breakpoints={{
+                  0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                  },
+                  600: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                  },
+                  1000: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                  },
+                }}
+                className="pb-5"
+              >
+                {diseases.map((d) => (
+                  <SwiperSlide>
+                    <Card
+                      cardImg={d.img}
+                      cardHeader={d.header}
+                      cardInfo={d.info}
+                      slug={d.slug}
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </div>
           </div>
         </div>

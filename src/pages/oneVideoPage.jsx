@@ -50,8 +50,7 @@ const oneVideoPage = () => {
           <hr />
           <div className="px-3 px-lg-0">
             <h2 className="my-4 pt-5">Benzer Yazılar</h2>
-
-            <div className="container videos-section py-5 my-5">
+            <div className="container videos-section pt-5 mt-5">
               <Swiper
                 pagination={{
                   clickable: true,
@@ -75,7 +74,6 @@ const oneVideoPage = () => {
                     spaceBetween: 30,
                   },
                 }}
-                className="mySwiper"
               >
                 {videos.map((v) => (
                   <SwiperSlide>

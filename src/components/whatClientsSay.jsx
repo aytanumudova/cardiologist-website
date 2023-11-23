@@ -22,7 +22,7 @@ const WhatClientsSay = () => {
     <div className="whatClientsSay text-center py-5 px-2" id="whatClientsSay">
       <div className="container">
         <h2 className="text-center color-blue">Hasta Görüşleri</h2>
-        <div className="line mb-5"></div>
+        <div className="line m-auto mt-3 mb-5"></div>
         <Swiper
           navigation={true}
           modules={[Navigation]}

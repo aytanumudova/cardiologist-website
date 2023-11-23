@@ -15,7 +15,7 @@ const services = () => {
   return (
     <div className="diseases-section container my-5 py-5">
       <h2 className="text-center color-blue">Şikayet ve Tanı</h2>
-      <div className="line mb-5"></div>
+      <div className="line m-auto mt-3 mb-5"></div>
       <Swiper
         pagination={{
           clickable: true,
@@ -39,7 +39,7 @@ const services = () => {
             spaceBetween: 30,
           },
         }}
-        className="mySwiper"
+        className="pb-5"
       >
         {diseases.map((d) => (
           <SwiperSlide>

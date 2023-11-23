@@ -14,7 +14,7 @@ const videos = () => {
   return (
     <div className="container videos-section py-5 my-5">
       <h2 className="text-center color-blue">Videolar</h2>
-      <div className="line mb-5"></div>
+      <div className="line m-auto mt-3 mb-5"></div>
 
       <Swiper
         pagination={{
@@ -39,7 +39,7 @@ const videos = () => {
             spaceBetween: 30,
           },
         }}
-        className="mySwiper"
+        className="pb-5"
       >
         {videos.map((v) => (
           <SwiperSlide>

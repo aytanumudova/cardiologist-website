@@ -76,8 +76,6 @@ $medium-blue: #002742;
 .line {
   border: 1px solid #00548b;
   width: 6.3rem;
-  margin: auto;
-  margin-top: 20px;
 }
 
 /* Navbar */
@@ -85,29 +83,26 @@ $medium-blue: #002742;
   @extend .custom-gradient;
   .navbar-toggler {
     border: none !important;
-    font-size: 30px !important;
+    font-size: 1.8rem !important;
     &:focus {
       text-decoration: none;
       outline: 0;
       box-shadow: none !important;
     }
   }
-
   .navbar-brand {
     color: $navbar-brand-color !important;
     font-weight: 500 !important;
     img {
       width: 3.2rem;
-      margin-right: 10px;
+      margin-right: 0.7rem;
     }
   }
-
   .language img {
     width: 1.5rem;
   }
-
   .nav-item {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .nav-link:hover {
     color: $medium-blue !important;
@@ -135,7 +130,7 @@ $medium-blue: #002742;
 
   @media (max-width: 768px) {
     .navbar-toggler {
-      font-size: 25px !important;
+      font-size: 1.6rem !important;
     }
   }
 }
@@ -179,9 +174,6 @@ $medium-blue: #002742;
   .card-text a {
     @extend .card-text-a-style;
   }
-  .mySwiper {
-    padding-bottom: 50px !important;
-  }
 }
 
 /* Diseases Section  */
@@ -192,12 +184,8 @@ $medium-blue: #002742;
   .card-img-top {
     @extend .card-img-style;
   }
-
   .card-text a {
     @extend .card-text-a-style;
-  }
-  .mySwiper {
-    padding-bottom: 50px !important;
   }
 }
 
@@ -313,15 +301,6 @@ $medium-blue: #002742;
     display: inline-block;
     margin-bottom: 15px;
   }
-  .card {
-    @extend .card-style;
-  }
-  .cards-container .card-img-top {
-    @extend .card-img-style;
-  }
-  .card-text a {
-    @extend .card-text-a-style;
-  }
 }
 
 /* OneVideo Page */
@@ -330,7 +309,7 @@ $medium-blue: #002742;
   iframe {
     border-radius: 20px;
     width: 90%;
-    height: 26px;
+    height: 26rem;
     object-fit: cover;
   }
 }
