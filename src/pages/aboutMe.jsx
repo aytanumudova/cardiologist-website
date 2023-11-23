@@ -3,7 +3,6 @@ import doctorImg from "../assets/imgs/aboutMe/cardiologist.jpeg";
 import Header from "../components/header";
 import Footer from "../components/footer";
 
-import logo from "../assets/imgs/navbar/cardiology.png";
 import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
 
@@ -11,7 +10,7 @@ const aboutMe = () => {
   return (
     <div>
       <Header />
-      <div className="aboutme-section">
+      <div className="aboutme-page">
         <div className="container">
           <h1 className="mb-4 text-center">Kardiyolog Dr. Khayal Mirzayev</h1>
           <small className="text-center d-block">

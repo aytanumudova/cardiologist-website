@@ -8,7 +8,7 @@
   background-color: #002742;
 }
 
-.section, .services-page, .contact-section, .oneVideo-page, .aboutDisease-page, .atMedia-page, .diseases-page, .aboutme-section {
+.section, .services-page, .contact-section, .oneVideo-page, .aboutDisease-page, .atMedia-page, .diseases-page, .aboutme-page {
   background-color: #f5f6fa;
   padding: 10rem 0;
 }
@@ -100,7 +100,7 @@
   font-weight: 500 !important;
 }
 .navbar .navbar-brand img {
-  width: 50px;
+  width: 3.2rem;
   margin-right: 10px;
 }
 .navbar .language img {
@@ -186,7 +186,7 @@
   transition: 0.3ms;
 }
 .footer .logo-footer {
-  width: 45px;
+  width: 2.8rem;
   margin-right: 8px;
   color: #58b0fe !important;
   font-weight: 500 !important;
@@ -198,28 +198,22 @@
 .footer .bold-text {
   font-weight: 500;
 }
-.footer .info-row {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 10px;
-}
 .footer .icon {
   color: #002742;
 }
 
-/* Aboutme Section */
-.aboutme-section .doctorImg-container {
+/* Aboutme Page */
+.aboutme-page .doctorImg-container {
   height: 19rem;
 }
-.aboutme-section .doctorImg-container img {
+.aboutme-page .doctorImg-container img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px;
 }
-.aboutme-section .info-rows-container span {
+.aboutme-page .info-rows-container span {
   background-color: #002742;
   color: #fff;
   border-radius: 45%;
@@ -253,20 +247,14 @@
      object-fit: cover;
 }
 .aboutDisease-page .article-text {
-  line-height: 35px;
+  line-height: 2.2rem;
 }
 .aboutDisease-page .article-text p {
-  margin-bottom: 35px;
+  margin-bottom: 2.2rem;
 }
 .aboutDisease-page span {
   display: inline-block;
   margin-bottom: 15px;
-}
-@media (max-width: 768px) {
-  .aboutDisease-section .article-text {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 }
 /* OneVideo Page */
 .oneVideo-page iframe {
@@ -278,13 +266,23 @@
 }
 
 /* Contact Section */
-.contact-section .info-row a {
+.contact-section a {
   text-decoration: none;
   color: #000;
 }
-.contact-section .info-row a:hover {
+.contact-section a:hover {
   text-decoration: underline;
   transition: 0.3ms;
+}
+.contact-section .icon {
+  color: #002742;
+}
+.contact-section input::-moz-placeholder, .contact-section textarea::-moz-placeholder {
+  color: #a0a0a0;
+}
+.contact-section input::placeholder,
+.contact-section textarea::placeholder {
+  color: #a0a0a0;
 }
 .contact-section .myIframe {
   border-radius: 20px;
@@ -306,22 +304,6 @@
 .contact-section .myForm input:not([type=checkbox]):focus,
 .contact-section textarea:focus {
   border-color: #c5c5c5;
-}
-.contact-section .info-row {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 10px;
-}
-.contact-section .icon {
-  color: #002742;
-}
-.contact-section input::-moz-placeholder, .contact-section textarea::-moz-placeholder {
-  color: #a0a0a0;
-}
-.contact-section input::placeholder,
-.contact-section textarea::placeholder {
-  color: #a0a0a0;
 }
 
 /* Services Page */

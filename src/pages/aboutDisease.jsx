@@ -3,9 +3,6 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 
 import img1 from "../assets/imgs/services/image1.jpg";
-import img2 from "../assets/imgs/services/ritim-bozukluk.jpeg";
-import img3 from "../assets/imgs/services/kalp_yetersizligi.jpg";
-import img4 from "../assets/imgs/services/carpinti.jpg";
 
 import { Link } from "react-router-dom";
 import Card from "./card";
@@ -43,7 +40,7 @@ const aboutDisease = () => {
               alt="article-image"
             />
           </div>
-          <div className="article-text py-5 mt-2 ms-3 me-3">
+          <div className="article-text py-5 px-2 px-md-0 mx-3">
             <p>
               Kalp, tüm vücudun sağlığını etkileyen ve sağlıklı çalışmaması
               durumunda ciddi sağlık riskleri doğurabilecek bir organdır.

@@ -97,7 +97,7 @@ $medium-blue: #002742;
     color: $navbar-brand-color !important;
     font-weight: 500 !important;
     img {
-      width: 50px;
+      width: 3.2rem;
       margin-right: 10px;
     }
   }
@@ -213,7 +213,7 @@ $medium-blue: #002742;
     }
   }
   .logo-footer {
-    width: 45px;
+    width: 2.8rem;
     margin-right: 8px;
     color: #58b0fe !important;
     font-weight: 500 !important;
@@ -226,22 +226,17 @@ $medium-blue: #002742;
   .bold-text {
     font-weight: 500;
   }
-  .info-row {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 10px;
-  }
+
   .icon {
     color: $medium-blue;
   }
 }
 
-/* Aboutme Section */
+/* Aboutme Page */
 .myNavbar {
   @extend .custom-gradient;
 }
-.aboutme-section {
+.aboutme-page {
   @extend .section;
   .doctorImg-container {
     height: 19rem;
@@ -309,9 +304,9 @@ $medium-blue: #002742;
     object-fit: cover;
   }
   .article-text {
-    line-height: 35px;
+    line-height: 2.2rem;
     p {
-      margin-bottom: 35px;
+      margin-bottom: 2.2rem;
     }
   }
   span {
@@ -329,13 +324,6 @@ $medium-blue: #002742;
   }
 }
 
-@media (max-width: 768px) {
-  .aboutDisease-section .article-text {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
 /* OneVideo Page */
 .oneVideo-page {
   @extend .section;
@@ -350,7 +338,7 @@ $medium-blue: #002742;
 /* Contact Section */
 .contact-section {
   @extend .section;
-  .info-row a {
+  a {
     text-decoration: none;
     color: #000;
     &:hover {
@@ -358,6 +346,14 @@ $medium-blue: #002742;
       transition: 0.3ms;
     }
   }
+  .icon {
+    color: $medium-blue;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    color: #a0a0a0;
+  }
+
   .myIframe {
     border-radius: 20px;
     box-shadow: 4px 34px 60px -30px rgba(0, 0, 0, 0.28);
@@ -378,19 +374,6 @@ $medium-blue: #002742;
       border-color: #c5c5c5;
     }
   }
-  .info-row {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 10px;
-  }
-  .icon {
-    color: $medium-blue;
-  }
-  input::placeholder,
-  textarea::placeholder {
-    color: #a0a0a0;
-  }
 }
 
 /* Services Page */
@@ -401,7 +384,6 @@ $medium-blue: #002742;
     height: 25rem;
     margin-bottom: 5rem !important;
   }
-
   .card-head img {
     @extend .card-img-style;
     height: 22rem;

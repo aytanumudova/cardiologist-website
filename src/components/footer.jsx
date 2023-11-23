@@ -37,26 +37,26 @@ const footer = () => {
         </div>
         <div className="col-12 col-lg-4 d-flex flex-column">
           <h5> İletişim Bilgileri</h5>
-          <div className="info-row">
+          <div className="d-flex align-items-center gap-2 mb-2">
             <FontAwesomeIcon icon={faLocationDot} className="icon" />
             <span>
               Kızılırmak Mah., Ufuk Üni. Cad., 1445.Sokak, Paragon Tower, 6.Kat
               No:31, Çukurambar/ Ankara
             </span>
           </div>
-          <div className="info-row">
+          <div className="d-flex align-items-center gap-2 mb-2">
             <FontAwesomeIcon icon={faMap} className="icon" />
             <a href="#">Yol Tarifi Al</a>
           </div>
-          <div className="info-row">
+          <div className="d-flex align-items-center gap-2 mb-2">
             <FontAwesomeIcon icon={faPhone} className="icon" />
             <a href="tel:01234">0312 418 14 34</a>
           </div>
-          <div className="info-row">
+          <div className="d-flex align-items-center gap-2 mb-2">
             <FontAwesomeIcon icon={faEnvelope} className="icon" />
             <a href="mailto:bilgi@khayalmirza.com">bilgi@khayalmirza.com</a>
           </div>
-          <div className="info-row">
+          <div className="d-flex align-items-center gap-2">
             <FontAwesomeIcon icon={faClock} className="icon" />
             <span>Hafta içi / 10:30 - 18:30</span>
           </div>

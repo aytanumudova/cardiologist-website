@@ -1,16 +1,14 @@
 import React from "react";
 import { useEffect } from "react";
 
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 
 import { Navigation } from "swiper/modules";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 const WhatClientsSay = () => {
   useEffect(() => {
     AOS.init({
