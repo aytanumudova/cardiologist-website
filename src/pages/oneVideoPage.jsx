@@ -6,8 +6,13 @@ import Card from "./videoCard";
 import videos from "../videos.json";
 import { Link } from "react-router-dom";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Autoplay, Pagination } from "swiper/modules";
 const oneVideoPage = () => {
-    return (
+  return (
     <div>
       <Header />
       <div className="oneVideo-page">
@@ -45,16 +50,45 @@ const oneVideoPage = () => {
           <hr />
           <div className="px-3 px-lg-0">
             <h2 className="my-4 pt-5">Benzer Yazılar</h2>
-            <div className="row cards-container">
-              {videos.map((v) => (
-                <Card
-                  cardImg={v.img}
-                  cardHeader={v.header}
-                  cardInfo={v.info}
-                  slug={v.slug}
-                  className={"col-12 col-md-6 col-lg-4"}
-                />
-              ))}
+
+            <div className="container videos-section py-5 my-5">
+              <Swiper
+                pagination={{
+                  clickable: true,
+                }}
+                modules={[Autoplay, Pagination]}
+                autoplay={{
+                  delay: 3500,
+                  disableOnInteraction: true,
+                }}
+                breakpoints={{
+                  0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                  },
+                  600: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                  },
+                  1000: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                  },
+                }}
+                className="mySwiper"
+              >
+                {videos.map((v) => (
+                  <SwiperSlide>
+                    <Card
+                      cardImg={v.img}
+                      cardHeader={v.header}
+                      cardInfo={v.info}
+                      slug={v.slug}
+                      key={v.slug}
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </div>
           </div>
         </div>

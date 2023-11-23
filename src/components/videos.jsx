@@ -17,7 +17,6 @@ const videos = () => {
       <div className="line mb-5"></div>
 
       <Swiper
-      loop={true}
         pagination={{
           clickable: true,
         }}

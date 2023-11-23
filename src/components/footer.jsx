@@ -62,7 +62,7 @@ const footer = () => {
           </div>
         </div>
       </div>
-      <div className="container copyrighter-row">
+      <div className="container mt-5 mb-2">
         &copy; Copyright 2023 – Drkhayalmirza.com | Her hakkı saklıdır.
       </div>
     </div>
